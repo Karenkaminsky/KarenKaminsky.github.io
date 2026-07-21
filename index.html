@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karen Kaminsky | Portfólio</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,9 +26,16 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <a href="seu-curriculo.pdf" download="Curriculo_Karen_Kaminsky" class="btn-download">
-            <i class="fas fa-file-download"></i> Currículo
-        </a>
+
+        <div style="display: flex; gap: 12px; align-items: center;">
+            <button id="theme-toggle" class="btn-theme" title="Alternar Tema">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <a href="curriculo.pdf" download="Curriculo_Karen_Kaminsky.pdf" class="btn-download">
+                <i class="fas fa-file-download"></i> Currículo
+            </a>
+        </div>
     </header>
 
     <main class="container-scroll">
@@ -35,10 +44,10 @@
             <div class="glass-card">
                 <i class="fab fa-python python-icon"></i>
                 <h1>Karen Kaminsky</h1>
-                <p>Estagiária de Suporte de TI | Python Developer</p>
+                <p>Estagiária de Suporte de TI | Desenvolvedora Python & Web</p>
                 <div class="social-hero">
-                    <a href="https://github.com/Karenkaminsky" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Karenkaminsky" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </section>
@@ -46,20 +55,26 @@
         <section id="sobre" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-user"></i> Sobre Mim</h2>
-                <p>Estudante de Tecnologia focada em infraestrutura e automação. Atualmente estagiando no suporte técnico, onde utilizo Python para criar scripts que facilitam o dia a dia da equipe.</p>
+                <p>
+                    Sou estudante de Tecnologia em início de formação e atuo como estagiária de Suporte de TI. 
+                    Tenho paixão por resolução de problemas e automação de processos, focando meus estudos em 
+                    <strong>Python</strong> e desenvolvimento Web para evoluir continuamente na área tech.
+                </p>
             </div>
         </section>
 
         <section id="experiencia" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-briefcase"></i> Experiência & Formação</h2>
-                <div class="timeline-item">
-                    <h4>Estágio em Suporte de TI</h4>
-                    <p>Manutenção, redes e suporte ao usuário final.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Técnico em Informática</h4>
-                    <p>Foco em Internet e Desenvolvimento de Sistemas.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Estágio em Suporte de TI</h4>
+                        <p>Atendimento interno, suporte ao usuário, manutenção preventiva e auxílio na infraestrutura de redes.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Técnico em Informática para Internet</h4>
+                        <p>Formação focada em desenvolvimento web, estruturas de banco de dados e lógica de programação.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -68,11 +83,13 @@
             <div class="glass-card">
                 <h2><i class="fas fa-code"></i> Projetos</h2>
                 <div class="project-grid">
-                    <div class="mini-card">
-                        <p><strong>FreelaDuo</strong> (TCC)</p>
+                    <div class="project-item">
+                        <h3>FreelaDuo (TCC)</h3>
+                        <p>Plataforma de freelancing desenvolvida para facilitar a conexão entre profissionais e oportunidades de trabalho autônomo.</p>
                     </div>
-                    <div class="mini-card">
-                        <p><strong>Scripts Python</strong> (Automação)</p>
+                    <div class="project-item">
+                        <h3>Automações em Python</h3>
+                        <p>Desenvolvimento de scripts funcionais para organização de arquivos, manipulação de dados e otimização de tarefas operacionais de TI.</p>
                     </div>
                 </div>
             </div>
@@ -82,13 +99,15 @@
             <div class="glass-card">
                 <h2><i class="fas fa-tools"></i> Hard Skills</h2>
                 <div class="skills-tag">
-                    <span class="python">Python</span>
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                    <span>MySQL</span>
-                    <span>PHP</span>
-                    <span>Java</span>
+                    <span class="python"><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fab fa-html5"></i> HTML5</span>
+                    <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span><i class="fab fa-js"></i> JavaScript</span>
+                    <span><i class="fas fa-database"></i> MySQL</span>
+                    <span><i class="fab fa-php"></i> PHP</span>
+                    <span><i class="fab fa-java"></i> Java</span>
+                    <span><i class="fab fa-figma"></i> Figma</span>
+                    <span><i class="fas fa-server"></i> WAMP / XAMPP</span>
                 </div>
             </div>
         </section>
@@ -100,8 +119,9 @@
                     <span class="soft">Resolução de Problemas</span>
                     <span class="soft">Comunicação Assertiva</span>
                     <span class="soft">Trabalho em Equipe</span>
-                    <span class="soft">Empatia</span>
+                    <span class="soft">Empatia & Atendimento</span>
                     <span class="soft">Proatividade</span>
+                    <span class="soft">Adaptabilidade</span>
                 </div>
             </div>
         </section>
@@ -109,10 +129,14 @@
         <section id="contato" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-envelope"></i> Contato</h2>
-                <p>Vamos trabalhar juntos?</p>
+                <p>Quer conversar sobre oportunidades ou projetos? Clique abaixo:</p>
                 <div class="contact-btns">
-                    <a href="https://github.com/Karenkaminsky" target="_blank" class="btn-final">GitHub</a>
-                    <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank" class="btn-final">LinkedIn</a>
+                    <a href="https://github.com/Karenkaminsky" target="_blank" class="btn-final">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank" class="btn-final">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
                 </div>
             </div>
         </section>
@@ -120,8 +144,10 @@
     </main>
 
     <footer>
-        <p>© 2026 - Karen Kaminsky</p>
+        <p>© 2026 - Karen Kaminsky | Todos os Direitos Reservados</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
