@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karen Kaminsky | Portfólio</title>
     
+    <!-- Biblioteca de Ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
+    <!-- Arquivo de Estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- CABEÇALHO / NAVEGAÇÃO SUPERIOR -->
     <header class="navbar">
         <h2 class="logo">Karen Kaminsky</h2>
         <nav>
@@ -27,6 +30,7 @@
             </ul>
         </nav>
 
+        <!-- AÇÕES DO CABEÇALHO (Troca de Tema e Download do Currículo) -->
         <div style="display: flex; gap: 12px; align-items: center;">
             <button id="theme-toggle" class="btn-theme" title="Alternar Tema">
                 <i class="fas fa-moon"></i>
@@ -38,13 +42,19 @@
         </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL (Estruturado em blocos de rolagem) -->
     <main class="container-scroll">
         
+        <!-- SEÇÃO: HOME (Apresentação Inicial) -->
         <section id="home" class="block">
-            <div class="glass-card">
-                <i class="fab fa-python python-icon"></i>
-                <h1>Karen Kaminsky</h1>
-                <p>Estagiária de Suporte de TI | Desenvolvedora Python & Web</p>
+            <div class="glass-card home-card">
+                <div class="profile-header">
+                    <!-- Espaço reservado para futura inclusão da foto de perfil:
+                    <img src="sua-foto.jpg" alt="Karen Kaminsky" class="profile-img"> 
+                    -->
+                    <h1>Karen Kaminsky</h1>
+                </div>
+                <p>Estagiária de Suporte de TI | Desenvolvedora & Web</p>
                 <div class="social-hero">
                     <a href="https://github.com/Karenkaminsky" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -52,6 +62,7 @@
             </div>
         </section>
 
+        <!-- SEÇÃO: SOBRE MIM -->
         <section id="sobre" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-user"></i> Sobre Mim</h2>
@@ -63,6 +74,7 @@
             </div>
         </section>
 
+        <!-- SEÇÃO: EXPERIÊNCIA E FORMAÇÃO -->
         <section id="experiencia" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-briefcase"></i> Experiência & Formação</h2>
@@ -79,27 +91,49 @@
             </div>
         </section>
 
+        <!-- SEÇÃO: PROJETOS (Estrutura Expansível via Checkbox) -->
         <section id="projetos" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-code"></i> Projetos</h2>
-                <div class="project-grid">
-                    <div class="project-item">
-                        <h3>FreelaDuo (TCC)</h3>
-                        <p>Plataforma de freelancing desenvolvida para facilitar a conexão entre profissionais e oportunidades de trabalho autônomo.</p>
+                <div class="project-list">
+                    
+                    <!-- Card de Projeto 1 (FreelaDuo) -->
+                    <div class="project-accordion">
+                        <!-- Checkbox oculto que controla a expansão/recolhimento do card -->
+                        <input type="checkbox" id="project1" class="accordion-toggle">
+                        
+                        <!-- Rótulo do Checkbox (Cabeçalho Clicável do Projeto) -->
+                        <label for="project1" class="accordion-header">
+                            <span class="title"><i class="fas fa-folder-open"></i> FreelaDuo (TCC)</span>
+                            <i class="fas fa-chevron-down icon-arrow"></i>
+                        </label>
+                        
+                        <!-- Conteúdo Detalhado (Exibido apenas quando o checkbox estiver marcado) -->
+                        <div class="accordion-content">
+                            <p>Plataforma de freelancing desenvolvida para facilitar a conexão entre profissionais e oportunidades de trabalho autônomo.</p>
+                            
+                            <!-- Imagem Demonstrativa do Projeto -->
+                            <div class="project-preview">
+                                <img src="https://via.placeholder.com/600x300?text=Preview+FreelaDuo" alt="Preview FreelaDuo">
+                            </div>
+
+                            <!-- Link direto para o Repositório do Projeto no GitHub -->
+                            <a href="https://github.com/Karenkaminsky/FreelaDuo" target="_blank" class="btn-github-project">
+                                <i class="fab fa-github"></i> Ver no GitHub
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-item">
-                        <h3>Automações em Python</h3>
-                        <p>Desenvolvimento de scripts funcionais para organização de arquivos, manipulação de dados e otimização de tarefas operacionais de TI.</p>
-                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- SEÇÃO: HARD SKILLS (Habilidades Técnicas com Efeitos Animados) -->
         <section id="habilidades" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-tools"></i> Hard Skills</h2>
-                <div class="skills-tag">
-                    <span class="python"><i class="fab fa-python"></i> Python</span>
+                <div class="skills-tag animated-skills">
+                    <!-- <span class="python"><i class="fab fa-python"></i> Python</span> -->
                     <span><i class="fab fa-html5"></i> HTML5</span>
                     <span><i class="fab fa-css3-alt"></i> CSS3</span>
                     <span><i class="fab fa-js"></i> JavaScript</span>
@@ -112,6 +146,7 @@
             </div>
         </section>
 
+        <!-- SEÇÃO: SOFT SKILLS (Habilidades Comportamentais) -->
         <section id="softskills" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-brain"></i> Soft Skills</h2>
@@ -126,6 +161,7 @@
             </div>
         </section>
 
+        <!-- SEÇÃO: CONTATO -->
         <section id="contato" class="block">
             <div class="glass-card">
                 <h2><i class="fas fa-envelope"></i> Contato</h2>
@@ -143,10 +179,12 @@
 
     </main>
 
+    <!-- RODAPÉ FIXO DA PÁGINA -->
     <footer>
         <p>© 2026 - Karen Kaminsky | Todos os Direitos Reservados</p>
     </footer>
 
+    <!-- Script de Funcionalidades JavaScript -->
     <script src="script.js"></script>
 
 </body>
