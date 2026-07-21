@@ -1,54 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karen Kaminsky - Portfólio</title>
+    <title>Karen Kaminsky | Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Karen Kaminsky</h1>
-        <p>Estagiária de Suporte de TI | Estudante de Desenvolvimento Web</p>
+    <header class="navbar">
+        <h2 class="logo">Karen Kaminsky</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Hard Skills</a></li>
+                <li><a href="#softskills">Soft Skills</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="seu-curriculo.pdf" download="Curriculo_Karen_Kaminsky" class="btn-download">
+            <i class="fas fa-file-download"></i> Currículo
+        </a>
     </header>
 
-    <section class="container">
+    <main class="container-scroll">
+        
+        <section id="home" class="block">
+            <div class="glass-card">
+                <i class="fab fa-python python-icon"></i>
+                <h1>Karen Kaminsky</h1>
+                <p>Estagiária de Suporte de TI | Python Developer</p>
+                <div class="social-hero">
+                    <a href="https://github.com/Karenkaminsky" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
 
-        <h2>Sobre mim</h2>
-        <p>
-            Sou estudante de Desenvolvimento Web em início de formação e atuo como estagiária de Suporte de TI,
-            auxiliando na área de tecnologia e aprendizado constante em programação e desenvolvimento de sistemas.
-        </p>
+        <section id="sobre" class="block">
+            <div class="glass-card">
+                <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+                <p>Estudante de Tecnologia focada em infraestrutura e automação. Atualmente estagiando no suporte técnico, onde utilizo Python para criar scripts que facilitam o dia a dia da equipe.</p>
+            </div>
+        </section>
 
-        <h2>Objetivo</h2>
-        <p>
-            Busco oportunidades de estágio em TI ou desenvolvimento back-end (Java), com foco em aprendizado e evolução profissional.
-        </p>
+        <section id="experiencia" class="block">
+            <div class="glass-card">
+                <h2><i class="fas fa-briefcase"></i> Experiência & Formação</h2>
+                <div class="timeline-item">
+                    <h4>Estágio em Suporte de TI</h4>
+                    <p>Manutenção, redes e suporte ao usuário final.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Técnico em Informática</h4>
+                    <p>Foco em Internet e Desenvolvimento de Sistemas.</p>
+                </div>
+            </div>
+        </section>
 
-        <h2>Conhecimentos em aprendizado</h2>
-        <ul>
-            <li>HTML</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>Java</li>
-            <li>MySQL</li>
-            <li>Figma</li>
-            <li>Android Studio</li>
-            <li>WAMP / XAMPP</li>
-        </ul>
+        <section id="projetos" class="block">
+            <div class="glass-card">
+                <h2><i class="fas fa-code"></i> Projetos</h2>
+                <div class="project-grid">
+                    <div class="mini-card">
+                        <p><strong>FreelaDuo</strong> (TCC)</p>
+                    </div>
+                    <div class="mini-card">
+                        <p><strong>Scripts Python</strong> (Automação)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2>Projetos</h2>
-        <p><strong>FreelaDuo (TCC)</strong> - Plataforma de freelancing para geração de renda extra.</p>
+        <section id="habilidades" class="block">
+            <div class="glass-card">
+                <h2><i class="fas fa-tools"></i> Hard Skills</h2>
+                <div class="skills-tag">
+                    <span class="python">Python</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>MySQL</span>
+                    <span>PHP</span>
+                    <span>Java</span>
+                </div>
+            </div>
+        </section>
 
-        <h2>Contato</h2>
-        <p>GitHub: <a href="https://github.com/Karenkaminsky" target="_blank">Acessar</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank">Acessar</a></p>
+        <section id="softskills" class="block">
+            <div class="glass-card">
+                <h2><i class="fas fa-brain"></i> Soft Skills</h2>
+                <div class="skills-tag">
+                    <span class="soft">Resolução de Problemas</span>
+                    <span class="soft">Comunicação Assertiva</span>
+                    <span class="soft">Trabalho em Equipe</span>
+                    <span class="soft">Empatia</span>
+                    <span class="soft">Proatividade</span>
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <section id="contato" class="block">
+            <div class="glass-card">
+                <h2><i class="fas fa-envelope"></i> Contato</h2>
+                <p>Vamos trabalhar juntos?</p>
+                <div class="contact-btns">
+                    <a href="https://github.com/Karenkaminsky" target="_blank" class="btn-final">GitHub</a>
+                    <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank" class="btn-final">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        <p>© 2026 - Karen Kaminsky |Todos os Reservados</p>
+        <p>© 2026 - Karen Kaminsky</p>
     </footer>
 
 </body>

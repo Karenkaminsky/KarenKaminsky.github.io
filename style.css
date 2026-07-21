@@ -1,59 +1,144 @@
+/* CONFIGURAÇÃO DE ROLAGEM TIPO "SLIDE" */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO ULTRA ESCURO */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(120deg, #3b82f6, #8b5cf6, #f97316);
+    background: #020202;
     color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden; /* O scroll será controlado pelo main */
 }
 
-header {
-    text-align: center;
-    padding: 40px 20px;
+/* CONTAINER QUE FAZ A TELA MUDAR POR BLOCO */
+.container-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Força a tela a parar no bloco */
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.container {
-    background: rgba(0, 0, 0, 0.6);
-    margin: 20px auto;
+.block {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start; /* Alinha o topo do bloco com o topo da tela */
     padding: 20px;
-    max-width: 800px;
-    border-radius: 10px;
 }
 
-h2 {
-    border-left: 4px solid #fff;
-    padding-left: 10px;
+/* NAVBAR FIXA */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover { color: #c084fc; }
+
+/* BOTÃO DOWNLOAD CV */
+.btn-download {
+    background: #c084fc;
+    color: #fff !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* CARD GLASSMORPHISM */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 50px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.glass-card h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.glass-card h2 { color: #c084fc; margin-bottom: 20px; font-size: 2rem; }
+
+/* ÍCONE PYTHON */
+.python-icon {
+    font-size: 4rem;
+    color: #c084fc;
+    margin-bottom: 20px;
+}
+
+/* TAGS DE HABILIDADES */
+.skills-tag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-tag span {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-tag span.python { background: rgba(192, 132, 252, 0.2); border-color: #c084fc; }
+.skills-tag span.soft { border-color: #4ade80; color: #4ade80; }
+
+/* BOTÕES FINAIS */
+.contact-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     margin-top: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: rgba(255, 255, 255, 0.1);
-    margin: 5px 0;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-a {
+.btn-final {
+    padding: 12px 30px;
+    background: #111;
+    border: 1px solid #c084fc;
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
+.btn-final:hover { background: #c084fc; }
+
+/* FOOTER */
 footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    background-color: #000000
+    font-size: 12px;
+    color: #444;
 }
