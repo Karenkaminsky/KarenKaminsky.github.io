@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfólio de Karen Kaminsky, estagiária de Suporte de TI e desenvolvedora web.">
+
     <title>Karen Kaminsky | Portfólio</title>
-    
-    <!-- Biblioteca de Ícones Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Arquivo de Estilos CSS -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- CABEÇALHO / NAVEGAÇÃO SUPERIOR -->
+    <!-- CABEÇALHO -->
     <header class="navbar">
-        <h2 class="logo">Karen Kaminsky</h2>
-        <nav>
+
+        <a class="logo" href="#home" aria-label="Karen Kaminsky - início">
+            Karen Kaminsky
+        </a>
+
+        <button class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="main-nav">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#home">Início</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#habilidades">Hard Skills</a></li>
@@ -30,162 +44,396 @@
             </ul>
         </nav>
 
-        <!-- AÇÕES DO CABEÇALHO (Troca de Tema e Download do Currículo) -->
-        <div style="display: flex; gap: 12px; align-items: center;">
-            <button id="theme-toggle" class="btn-theme" title="Alternar Tema">
+        <div class="header-actions">
+
+            <button id="theme-toggle"
+                    class="btn-theme"
+                    type="button"
+                    aria-label="Ativar tema claro"
+                    title="Alternar tema">
                 <i class="fas fa-moon"></i>
             </button>
 
-            <a href="curriculo.pdf" download="Curriculo_Karen_Kaminsky.pdf" class="btn-download">
-                <i class="fas fa-file-download"></i> Currículo
+            <a href="curriculo.pdf"
+               download="Curriculo_Karen_Kaminsky.pdf"
+               class="btn-download">
+                <i class="fas fa-file-download"></i>
+                <span>Currículo</span>
             </a>
+
         </div>
+
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL (Estruturado em blocos de rolagem) -->
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="container-scroll">
-        
-        <!-- SEÇÃO: HOME (Apresentação Inicial) -->
-        <section id="home" class="block">
-            <div class="glass-card home-card">
-                <div class="profile-header">
-                    <!-- Espaço reservado para futura inclusão da foto de perfil:
-                    <img src="sua-foto.jpg" alt="Karen Kaminsky" class="profile-img"> 
-                    -->
+
+        <!-- APRESENTAÇÃO INICIAL -->
+        <section id="home" class="block hero-section">
+
+            <div class="hero-profile">
+
+                <!-- FOTO -->
+                <div class="hero-photo">
+                    <img src="minha-foto.jpg"
+                         alt="Foto de Karen Kaminsky"
+                         fetchpriority="high">
+                </div>
+
+                <!-- APRESENTAÇÃO -->
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        OLÁ! SEJA BEM-VINDO(A) AO MEU PORTFÓLIO
+                    </p>
+
                     <h1>Karen Kaminsky</h1>
+
+                    <h2 class="hero-role">
+                        Estagiária de Suporte de TI
+                        <span aria-hidden="true">•</span>
+                        Desenvolvedora Web
+                    </h2>
+
+                    <p class="hero-description">
+                        Sou apaixonada por tecnologia e gosto de transformar
+                        problemas em soluções. Tenho interesse em suporte
+                        técnico, desenvolvimento web e automação de processos.
+
+                        Estou sempre buscando aprender novas ferramentas,
+                        aprimorar minhas habilidades e crescer profissionalmente
+                        na área de Tecnologia da Informação.
+                    </p>
+
+                    <!-- REDES SOCIAIS -->
+                    <div class="hero-social">
+
+                        <a href="https://github.com/Karenkaminsky"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Meu GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/karenkaminsky"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Meu LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                    </div>
+
                 </div>
-                <p>Estagiária de Suporte de TI | Desenvolvedora & Web</p>
-                <div class="social-hero">
-                    <a href="https://github.com/Karenkaminsky" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
+
             </div>
+
         </section>
 
-        <!-- SEÇÃO: SOBRE MIM -->
-        <section id="sobre" class="block">
-            <div class="glass-card">
-                <h2><i class="fas fa-user"></i> Sobre Mim</h2>
-                <p>
-                    Sou estudante de Tecnologia em início de formação e atuo como estagiária de Suporte de TI. 
-                    Tenho paixão por resolução de problemas e automação de processos, focando meus estudos em 
-                    <strong>Python</strong> e desenvolvimento Web para evoluir continuamente na área tech.
-                </p>
-            </div>
-        </section>
 
-        <!-- SEÇÃO: EXPERIÊNCIA E FORMAÇÃO -->
+        <!-- EXPERIÊNCIA E FORMAÇÃO -->
         <section id="experiencia" class="block">
+
             <div class="glass-card">
-                <h2><i class="fas fa-briefcase"></i> Experiência & Formação</h2>
+
+                <p class="eyebrow">MINHA TRAJETÓRIA</p>
+
+                <h2>
+                    <i class="fas fa-briefcase"></i>
+                    Experiência e Formação
+                </h2>
+
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <h4>Estágio em Suporte de TI</h4>
-                        <p>Atendimento interno, suporte ao usuário, manutenção preventiva e auxílio na infraestrutura de redes.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Técnico em Informática para Internet</h4>
-                        <p>Formação focada em desenvolvimento web, estruturas de banco de dados e lógica de programação.</p>
-                    </div>
+
+                    <article class="timeline-item">
+
+                        <span class="timeline-icon">
+                            <i class="fas fa-laptop"></i>
+                        </span>
+
+                        <div class="timeline-content">
+
+                            <h3>Estágio em Suporte de TI</h3>
+
+                            <p>
+                                Atuação com atendimento interno, suporte aos
+                                usuários, auxílio na resolução de problemas
+                                técnicos e apoio às atividades de Tecnologia
+                                da Informação.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <span class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </span>
+
+                        <div class="timeline-content">
+
+                            <h3>Técnico em Informática para Internet</h3>
+
+                            <p>
+                                Formação voltada ao desenvolvimento web,
+                                lógica de programação, banco de dados e
+                                construção de soluções tecnológicas.
+                            </p>
+
+                        </div>
+
+                    </article>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- SEÇÃO: PROJETOS (Estrutura Expansível via Checkbox) -->
+
+        <!-- PROJETOS -->
         <section id="projetos" class="block">
+
             <div class="glass-card">
-                <h2><i class="fas fa-code"></i> Projetos</h2>
+
+                <p class="eyebrow">O QUE ESTOU CONSTRUINDO</p>
+
+                <h2>
+                    <i class="fas fa-code"></i>
+                    Projetos
+                </h2>
+
+                <p class="section-intro">
+                    Conheça alguns dos projetos em que venho trabalhando.
+                </p>
+
                 <div class="project-list">
-                    
-                    <!-- Card de Projeto 1 (FreelaDuo) -->
-                    <div class="project-accordion">
-                        <!-- Checkbox oculto que controla a expansão/recolhimento do card -->
-                        <input type="checkbox" id="project1" class="accordion-toggle">
-                        
-                        <!-- Rótulo do Checkbox (Cabeçalho Clicável do Projeto) -->
-                        <label for="project1" class="accordion-header">
-                            <span class="title"><i class="fas fa-folder-open"></i> FreelaDuo (TCC)</span>
-                            <i class="fas fa-chevron-down icon-arrow"></i>
-                        </label>
-                        
-                        <!-- Conteúdo Detalhado (Exibido apenas quando o checkbox estiver marcado) -->
+
+                    <details class="project-accordion">
+
+                        <summary class="accordion-header">
+
+                            <span class="project-title">
+                                <i class="fas fa-folder-open"></i>
+                                FreelaDuo — TCC
+                            </span>
+
+                            <i class="fas fa-chevron-down icon-arrow"
+                               aria-hidden="true"></i>
+
+                        </summary>
+
                         <div class="accordion-content">
-                            <p>Plataforma de freelancing desenvolvida para facilitar a conexão entre profissionais e oportunidades de trabalho autônomo.</p>
-                            
-                            <!-- Imagem Demonstrativa do Projeto -->
+
+                            <p>
+                                Plataforma de freelancing desenvolvida com
+                                a proposta de aproximar profissionais
+                                autônomos e pessoas que procuram serviços.
+                            </p>
+
                             <div class="project-preview">
-                                <img src="https://via.placeholder.com/600x300?text=Preview+FreelaDuo" alt="Preview FreelaDuo">
+
+                                <img
+                                    src="https://placehold.co/900x450/171d33/c084fc?text=FreelaDuo"
+                                    alt="Imagem ilustrativa do projeto FreelaDuo"
+                                    loading="lazy">
+
                             </div>
 
-                            <!-- Link direto para o Repositório do Projeto no GitHub -->
-                            <a href="https://github.com/Karenkaminsky/FreelaDuo" target="_blank" class="btn-github-project">
-                                <i class="fab fa-github"></i> Ver no GitHub
+                            <a href="https://github.com/Karenkaminsky/FreelaDuo"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="btn-primary">
+
+                                <i class="fab fa-github"></i>
+                                Ver projeto no GitHub
+
                             </a>
+
                         </div>
-                    </div>
+
+                    </details>
 
                 </div>
+
             </div>
+
         </section>
 
-        <!-- SEÇÃO: HARD SKILLS (Habilidades Técnicas com Efeitos Animados) -->
+
+        <!-- HARD SKILLS -->
         <section id="habilidades" class="block">
+
             <div class="glass-card">
-                <h2><i class="fas fa-tools"></i> Hard Skills</h2>
+
+                <p class="eyebrow">FERRAMENTAS E TECNOLOGIAS</p>
+
+                <h2>
+                    <i class="fas fa-tools"></i>
+                    Hard Skills
+                </h2>
+
                 <div class="skills-tag animated-skills">
-                    <!-- <span class="python"><i class="fab fa-python"></i> Python</span> -->
-                    <span><i class="fab fa-html5"></i> HTML5</span>
-                    <span><i class="fab fa-css3-alt"></i> CSS3</span>
-                    <span><i class="fab fa-js"></i> JavaScript</span>
-                    <span><i class="fas fa-database"></i> MySQL</span>
-                    <span><i class="fab fa-php"></i> PHP</span>
-                    <span><i class="fab fa-java"></i> Java</span>
-                    <span><i class="fab fa-figma"></i> Figma</span>
-                    <span><i class="fas fa-server"></i> WAMP / XAMPP</span>
+
+                    <span>
+                        <i class="fab fa-html5"></i>
+                        HTML5
+                    </span>
+
+                    <span>
+                        <i class="fab fa-css3-alt"></i>
+                        CSS3
+                    </span>
+
+                    <span>
+                        <i class="fab fa-js"></i>
+                        JavaScript
+                    </span>
+
+                    <span>
+                        <i class="fas fa-database"></i>
+                        MySQL
+                    </span>
+
+                    <span>
+                        <i class="fab fa-php"></i>
+                        PHP
+                    </span>
+
+                    <span>
+                        <i class="fab fa-java"></i>
+                        Java
+                    </span>
+
+                    <span>
+                        <i class="fab fa-figma"></i>
+                        Figma
+                    </span>
+
+                    <span>
+                        <i class="fas fa-server"></i>
+                        WAMP / XAMPP
+                    </span>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- SEÇÃO: SOFT SKILLS (Habilidades Comportamentais) -->
+
+        <!-- SOFT SKILLS -->
         <section id="softskills" class="block">
+
             <div class="glass-card">
-                <h2><i class="fas fa-brain"></i> Soft Skills</h2>
-                <div class="skills-tag">
-                    <span class="soft">Resolução de Problemas</span>
-                    <span class="soft">Comunicação Assertiva</span>
-                    <span class="soft">Trabalho em Equipe</span>
-                    <span class="soft">Empatia & Atendimento</span>
-                    <span class="soft">Proatividade</span>
-                    <span class="soft">Adaptabilidade</span>
+
+                <p class="eyebrow">COMO TRABALHO</p>
+
+                <h2>
+                    <i class="fas fa-brain"></i>
+                    Soft Skills
+                </h2>
+
+                <div class="skills-tag soft-skills">
+
+                    <span>
+                        <i class="fas fa-lightbulb"></i>
+                        Resolução de Problemas
+                    </span>
+
+                    <span>
+                        <i class="fas fa-comments"></i>
+                        Comunicação
+                    </span>
+
+                    <span>
+                        <i class="fas fa-people-group"></i>
+                        Trabalho em Equipe
+                    </span>
+
+                    <span>
+                        <i class="fas fa-handshake"></i>
+                        Empatia e Atendimento
+                    </span>
+
+                    <span>
+                        <i class="fas fa-bolt"></i>
+                        Proatividade
+                    </span>
+
+                    <span>
+                        <i class="fas fa-arrows-rotate"></i>
+                        Adaptabilidade
+                    </span>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- SEÇÃO: CONTATO -->
+
+        <!-- CONTATO -->
         <section id="contato" class="block">
-            <div class="glass-card">
-                <h2><i class="fas fa-envelope"></i> Contato</h2>
-                <p>Quer conversar sobre oportunidades ou projetos? Clique abaixo:</p>
+
+            <div class="glass-card contact-card">
+
+                <p class="eyebrow">VAMOS CONVERSAR?</p>
+
+                <h2>
+                    <i class="fas fa-envelope"></i>
+                    Entre em contato
+                </h2>
+
+                <p>
+                    Tenho interesse em aprender, compartilhar conhecimentos
+                    e conhecer novas oportunidades na área de tecnologia.
+                    Você pode me encontrar nos links abaixo.
+                </p>
+
                 <div class="contact-btns">
-                    <a href="https://github.com/Karenkaminsky" target="_blank" class="btn-final">
-                        <i class="fab fa-github"></i> GitHub
+
+                    <a href="https://github.com/Karenkaminsky"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn-primary">
+
+                        <i class="fab fa-github"></i>
+                        GitHub
+
                     </a>
-                    <a href="https://www.linkedin.com/in/karenkaminsky" target="_blank" class="btn-final">
-                        <i class="fab fa-linkedin"></i> LinkedIn
+
+                    <a href="https://www.linkedin.com/in/karenkaminsky"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn-primary">
+
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+
                     </a>
+
                 </div>
+
             </div>
+
         </section>
 
     </main>
 
-    <!-- RODAPÉ FIXO DA PÁGINA -->
-    <footer>
-        <p>© 2026 - Karen Kaminsky | Todos os Direitos Reservados</p>
-    </footer>
 
-    <!-- Script de Funcionalidades JavaScript -->
-    <script src="script.js"></script>
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Karen Kaminsky. Todos os direitos reservados.
+        </p>
+
+    </footer>
 
 </body>
 </html>
