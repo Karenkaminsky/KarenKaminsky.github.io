@@ -88,7 +88,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   3. CABEÇALHO COM EFEITO DE VIDRO
+   3. CABEÇALHO
 ======================================== */
 
 .navbar {
@@ -124,21 +124,135 @@ summary:focus-visible {
         border-color 0.3s ease;
 }
 
-.logo,
-.footer-logo {
+
+/* ================================ LOGO DO HEADER ================================ */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
     flex-shrink: 0;
 
-    color: var(--accent);
-    font-size: 1.25rem;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-
+    color: var(--text-color);
     text-decoration: none;
 }
 
-.logo-bracket {
-    color: var(--text-secondary);
-    font-weight: 500;
+/* MONOGRAMA K */
+
+.logo-mark {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    filter: drop-shadow(0 0 8px rgba(192, 132, 252, 0.35));
+
+    opacity: 0;
+    animation: logoMarkEntrance 0.8s ease forwards;
+}
+
+.logo-mark svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* DIVISÓRIA */
+
+.logo-divider {
+    width: 1px;
+    height: 39px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--accent),
+        transparent
+    );
+
+    transform: scaleY(0);
+    opacity: 0;
+
+    animation: logoDividerEntrance 0.5s ease 0.65s forwards;
+}
+
+/* NOME COMPLETO */
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 3px;
+
+    opacity: 0;
+    transform: translateX(-30px);
+
+    animation: logoNameEntrance 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.95s forwards;
+}
+
+.logo-name span:first-child {
+    color: var(--text-color);
+}
+
+.logo-name span:last-child {
+    color: var(--accent);
+    font-size: 0.78rem;
+    letter-spacing: 4px;
+}
+
+/* ================================
+   ANIMAÇÕES
+================================ */
+
+/* Logo aparece primeiro */
+
+@keyframes logoMarkEntrance {
+    from {
+        opacity: 0;
+        transform: translateX(-18px) scale(0.75);
+        filter: drop-shadow(0 0 0 transparent);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        filter: drop-shadow(0 0 10px rgba(192, 132, 252, 0.55));
+    }
+}
+
+/* Divisória aparece depois */
+
+@keyframes logoDividerEntrance {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+/* Nome entra da esquerda para a direita */
+
+@keyframes logoNameEntrance {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 
@@ -743,9 +857,16 @@ summary:focus-visible {
 
 .footer-logo {
     display: inline-block;
+    flex-shrink: 0;
+
     margin-bottom: 15px;
 
+    color: var(--accent);
     font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+
+    text-decoration: none;
 }
 
 .footer-description {
@@ -964,7 +1085,26 @@ summary:focus-visible {
 
     .logo {
         margin-right: auto;
-        font-size: 1.05rem;
+        gap: 9px;
+    }
+
+    .logo-mark {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-divider {
+        height: 33px;
+    }
+
+    .logo-name {
+        font-size: 0.78rem;
+        letter-spacing: 2px;
+    }
+
+    .logo-name span:last-child {
+        font-size: 0.65rem;
+        letter-spacing: 2.8px;
     }
 
     .menu-toggle {
@@ -1159,7 +1299,26 @@ summary:focus-visible {
 @media (max-width: 380px) {
 
     .logo {
-        font-size: 0.95rem;
+        gap: 7px;
+    }
+
+    .logo-mark {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo-divider {
+        height: 30px;
+    }
+
+    .logo-name {
+        font-size: 0.72rem;
+        letter-spacing: 1.5px;
+    }
+
+    .logo-name span:last-child {
+        font-size: 0.6rem;
+        letter-spacing: 2px;
     }
 
     .hero-photo {
@@ -1197,5 +1356,11 @@ summary:focus-visible {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+
+    .logo,
+    .logo-mark,
+    .logo-divider {
+        animation: none !important;
     }
 }
