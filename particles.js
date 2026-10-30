@@ -1,9 +1,3 @@
-
-/* ==========================================
-   PARTICLE NETWORK - KAREN KAMINSKY
-   Animação interativa de partículas
-========================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const canvas = document.getElementById("particles-canvas");
