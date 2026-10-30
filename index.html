@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,34 +6,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Portfólio de Karen Kaminsky, estagiária de Suporte de TI e desenvolvedora web.">
-    <meta name="theme-color" content="#100714">
+    <meta name="description" content="Portfólio profissional de Karen Kaminsky.">
+    <meta name="theme-color" content="#171b2d">
 
-    <title>Karen Kaminsky | Portfólio</title>
+    <title>Início | Karen Kaminsky</title>
 
-    <!-- FONT AWESOME -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    >
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-            <!-- FONTE SPACE GROTESK -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="particles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/particles.css">
 
-    <!-- JAVASCRIPT -->
-    <script src="script.js" defer></script>
-    <script src="particles.js" defer></script>
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+    <script src="js/particles.js" defer></script>
 </head>
 
 <body>
 
-    <!-- FUNDO DE PARTÍCULAS -->
+    <!-- FUNDO ANIMADO -->
     <div id="particles-background" aria-hidden="true">
         <canvas id="particles-canvas"></canvas>
     </div>
@@ -40,57 +40,104 @@
     <!-- CABEÇALHO -->
     <header class="navbar">
 
-        <!-- LOGO -->
-        <a class="logo" href="#home" aria-label="Karen Kaminsky - início">
+        <a class="logo" href="index.html" aria-label="Karen Kaminsky - início">
 
-    <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#e9c5ff"/>
-                    <stop offset="50%" stop-color="#c084fc"/>
-                    <stop offset="100%" stop-color="#7c3aed"/>
-                </linearGradient>
-            </defs>
+            <span class="logo-mark" aria-hidden="true">
+                <!-- Símbolo da logo -->
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 
-            <path
-                d="M10 7 H20 V27 L41 7 H55 L32 30 L56 57 H42 L25 38 L20 43 V57 H10 Z"
-                fill="url(#logoGradient)"
-            />
-        </svg>
-    </span>
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#e9c5ff"/>
+                            <stop offset="50%" stop-color="#c084fc"/>
+                            <stop offset="100%" stop-color="#7c3aed"/>
+                        </linearGradient>
+                    </defs>
 
-    <span class="logo-divider" aria-hidden="true"></span>
+                    <path
+                        d="M10 7 H20 V27 L41 7 H55 L32 30 L56 57 H42 L25 38 L20 43 V57 H10 Z"
+                        fill="url(#logoGradient)"/>
 
-    <span class="logo-name">
-        <span>KAREN</span>
-        <span>KAMINSKY</span>
-    </span>
+                </svg>
+            </span>
 
-</a>
+            <span class="logo-divider"></span>
 
+            <span class="logo-name">
+                <span>KAREN</span>
+                <span>KAMINSKY</span>
+            </span>
 
+        </a>
+
+        <!-- BOTÃO DO MENU MOBILE -->
         <button
             class="menu-toggle"
             id="menu-toggle"
             type="button"
             aria-label="Abrir menu"
             aria-expanded="false"
-            aria-controls="main-nav"
-        >
+            aria-controls="main-nav">
+
             <i class="fas fa-bars"></i>
+
         </button>
 
-
+        <!-- NAVEGAÇÃO -->
         <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+
             <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Hard Skills</a></li>
-                <li><a href="#softskills">Soft Skills</a></li>
-                <li><a href="#contato">Contato</a></li>
+
+                <li>
+                    <a href="index.html" class="active" aria-current="page">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre.html">
+                        Sobre mim
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experiencia.html">
+                        Experiência
+                    </a>
+                </li>
+
+                <li>
+                    <a href="formacao.html">
+                        Formação
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projetos.html">
+                        Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="hard-skills.html">
+                        Hard Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="soft-skills.html">
+                        Soft Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
 
     </header>
@@ -98,75 +145,92 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="container-scroll">
 
-        <!-- APRESENTAÇÃO -->
-        <section id="home" class="block hero-section">
+        <section class="block hero-section" id="home">
 
             <div class="hero-profile">
 
+                <!-- FOTO -->
                 <div class="hero-photo">
+
                     <img
-                        src="minha-foto.jpg"
+                        src="assets/img/minha-foto.jpg"
                         alt="Foto de Karen Kaminsky"
-                        fetchpriority="high"
-                    >
+                        fetchpriority="high">
+
                 </div>
 
+                <!-- APRESENTAÇÃO -->
                 <div class="hero-content">
 
-                    <p class="eyebrow">OLÁ! SEJA BEM-VINDO(A) AO MEU PORTFÓLIO</p>
+                    <p class="eyebrow">
+                        OLÁ! SEJA BEM-VINDO(A) AO MEU PORTFÓLIO
+                    </p>
 
                     <h1>Karen Kaminsky</h1>
 
                     <h2 class="hero-role">
                         Estagiária de Suporte de TI
                         <span aria-hidden="true">•</span>
-                        Em formação
+                        Desenvolvedora Web em formação
                     </h2>
 
                     <p class="hero-description">
                         Sou apaixonada por tecnologia e motivada pelo desafio
                         de transformar problemas em soluções por meio da inovação.
-                        Tenho interesse em atuar como desenvolvedora Full Stack,
-                        criando sistemas web, aplicações e soluções para automação
-                        de processos.
 
-                        <br><br>
+                        Tenho interesse em desenvolvimento web, suporte técnico
+                        e automação de processos.
 
                         Estou sempre em busca de novos conhecimentos, explorando
-                        ferramentas e tecnologias, aprimorando minhas habilidades
-                        e desenvolvendo minha experiência para crescer
-                        profissionalmente na área de Tecnologia da Informação.
+                        ferramentas e tecnologias para crescer profissionalmente
+                        na área de Tecnologia da Informação.
                     </p>
 
+                    <!-- REDES SOCIAIS -->
                     <div class="hero-social">
 
                         <a
                             href="https://github.com/Karenkaminsky"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Meu GitHub"
-                            title="GitHub"
-                        >
+                            aria-label="Meu GitHub">
+
                             <i class="fab fa-github"></i>
+
                         </a>
 
                         <a
                             href="https://www.linkedin.com/in/karenkaminsky"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Meu LinkedIn"
-                            title="LinkedIn"
-                        >
+                            aria-label="Meu LinkedIn">
+
                             <i class="fab fa-linkedin"></i>
+
                         </a>
 
                         <a
                             href="curriculo.pdf"
                             download="Curriculo_Karen_Kaminsky.pdf"
-                            aria-label="Baixar meu currículo"
-                            title="Baixar currículo"
-                        >
+                            aria-label="Baixar meu currículo">
+
                             <i class="fas fa-file-pdf"></i>
+
+                        </a>
+
+                    </div>
+
+                    <!-- BOTÕES -->
+                    <div class="contact-btns">
+
+                        <a href="projetos.html" class="btn-primary">
+                            <i class="fas fa-code"></i>
+                            Conheça meus projetos
+                        </a>
+
+                        <a href="contato.html" class="btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Entre em contato
                         </a>
 
                     </div>
@@ -177,335 +241,97 @@
 
         </section>
 
-        <!-- EXPERIÊNCIA E FORMAÇÃO -->
-        <section id="experiencia" class="block">
+    </main>
 
-            <div class="glass-card">
+    <!-- RODAPÉ -->
+    <footer class="footer">
 
-                <p class="eyebrow">MINHA TRAJETÓRIA</p>
+        <div class="footer-content">
 
-                <h2>
-                    <i class="fas fa-briefcase"></i>
-                    Experiência e Formação
-                </h2>
+            <div class="footer-brand">
 
-                <div class="timeline">
+                <a class="footer-logo" href="index.html">
+                    Karen Kaminsky
+                </a>
 
-                    <article class="timeline-item">
-
-                        <span class="timeline-icon">
-                            <i class="fas fa-laptop"></i>
-                        </span>
-
-                        <div class="timeline-content">
-                            <h3>Estágio em Suporte de TI</h3>
-
-                            <p>
-                                Atuação com atendimento interno, suporte aos
-                                usuários, auxílio na resolução de problemas
-                                técnicos e apoio às atividades de Tecnologia
-                                da Informação.
-                            </p>
-                        </div>
-
-                    </article>
-
-                    <article class="timeline-item">
-
-                        <span class="timeline-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </span>
-
-                        <div class="timeline-content">
-                            <h3>Técnico em Informática para Internet</h3>
-
-                            <p>
-                                Formação voltada ao desenvolvimento web,
-                                lógica de programação, banco de dados e
-                                construção de soluções tecnológicas.
-                            </p>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- PROJETOS -->
-        <section id="projetos" class="block">
-
-            <div class="glass-card">
-
-                <p class="eyebrow">O QUE ESTOU CONSTRUINDO</p>
-
-                <h2>
-                    <i class="fas fa-code"></i>
-                    Projetos
-                </h2>
-
-                <p class="section-intro">
-                    Conheça alguns dos projetos em que venho trabalhando.
+                <p class="footer-description">
+                    Estagiária de Suporte de TI e desenvolvedora web em formação.
+                    Sempre aprendendo, explorando tecnologias e construindo
+                    novas soluções.
                 </p>
 
-                <div class="project-list">
-
-                    <details class="project-accordion">
-
-                        <summary class="accordion-header">
-
-                            <span class="project-title">
-                                <i class="fas fa-folder-open"></i>
-                                FreelaDuo — TCC
-                            </span>
-
-                            <i
-                                class="fas fa-chevron-down icon-arrow"
-                                aria-hidden="true"
-                            ></i>
-
-                        </summary>
-
-                        <div class="accordion-content">
-
-                            <p>
-                                Plataforma em desenvolvimento com o objetivo
-                                de conectar empresas, profissionais da área
-                                de tecnologia, pessoas que estão iniciando
-                                suas carreiras no setor e pequenas empresas.
-
-                                Nosso foco é 100% voltado ao mercado de
-                                tecnologia, criando oportunidades de conexão,
-                                networking e desenvolvimento profissional,
-                                aproximando talentos e empresas.
-                            </p>
-
-                            <div class="project-preview">
-                                <img
-                                    src="https://placehold.co/900x450/171d33/c084fc?text=FreelaDuo"
-                                    alt="Imagem ilustrativa do projeto FreelaDuo"
-                                    loading="lazy"
-                                >
-                            </div>
-
-                            <a
-                                href="https://github.com/Karenkaminsky/FreelaDuo"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn-primary"
-                            >
-                                <i class="fab fa-github"></i>
-                                Ver projeto no GitHub
-                            </a>
-
-                        </div>
-
-                    </details>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- HARD SKILLS -->
-        <section id="habilidades" class="block">
-
-            <div class="glass-card">
-
-                <p class="eyebrow">FERRAMENTAS E TECNOLOGIAS</p>
-
-                <h2>
-                    <i class="fas fa-tools"></i>
-                    Hard Skills
-                </h2>
-
-                <div class="skills-tag animated-skills">
-
-                    <span><i class="fab fa-html5"></i> HTML5</span>
-                    <span><i class="fab fa-css3-alt"></i> CSS3</span>
-                    <span><i class="fab fa-js"></i> JavaScript</span>
-                    <span><i class="fas fa-database"></i> MySQL</span>
-                    <span><i class="fab fa-php"></i> PHP</span>
-                    <span><i class="fab fa-java"></i> Java</span>
-                    <span><i class="fab fa-figma"></i> Figma</span>
-                    <span><i class="fas fa-server"></i> WAMP / XAMPP</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- SOFT SKILLS -->
-        <section id="softskills" class="block">
-
-            <div class="glass-card">
-
-                <p class="eyebrow">COMO TRABALHO</p>
-
-                <h2>
-                    <i class="fas fa-brain"></i>
-                    Soft Skills
-                </h2>
-
-                <div class="skills-tag soft-skills">
-
-                    <span><i class="fas fa-lightbulb"></i> Resolução de Problemas</span>
-                    <span><i class="fas fa-comments"></i> Comunicação</span>
-                    <span><i class="fas fa-people-group"></i> Trabalho em Equipe</span>
-                    <span><i class="fas fa-handshake"></i> Empatia e Atendimento</span>
-                    <span><i class="fas fa-bolt"></i> Proatividade</span>
-                    <span><i class="fas fa-arrows-rotate"></i> Adaptabilidade</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- CONTATO -->
-        <section id="contato" class="block">
-
-            <div class="glass-card contact-card">
-
-                <p class="eyebrow">VAMOS CONVERSAR?</p>
-
-                <h2>
-                    <i class="fas fa-envelope"></i>
-                    Entre em contato
-                </h2>
-
-                <p>
-                    Tenho interesse em aprender, compartilhar conhecimentos
-                    e conhecer novas oportunidades na área de tecnologia.
-                    Você pode me encontrar nos links abaixo.
-                </p>
-
-                <div class="contact-btns">
+                <div class="footer-social">
 
                     <a
                         href="https://github.com/Karenkaminsky"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="btn-primary"
-                    >
+                        aria-label="GitHub">
+
                         <i class="fab fa-github"></i>
-                        GitHub
+
                     </a>
 
                     <a
                         href="https://www.linkedin.com/in/karenkaminsky"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="btn-primary"
-                    >
+                        aria-label="LinkedIn">
+
                         <i class="fab fa-linkedin"></i>
-                        LinkedIn
+
+                    </a>
+
+                    <a
+                        href="curriculo.pdf"
+                        download="Curriculo_Karen_Kaminsky.pdf"
+                        aria-label="Baixar currículo">
+
+                        <i class="fas fa-file-pdf"></i>
+
                     </a>
 
                 </div>
 
             </div>
 
-        </section>
+            <div class="footer-column footer-info">
 
-    </main>
+                <h3>Conecte-se</h3>
 
-    <!-- RODAPÉ -->
-<footer class="footer">
+                <p>
+                    <i class="fas fa-code"></i>
+                    Tecnologia e desenvolvimento
+                </p>
 
-    <div class="footer-content">
+                <p>
+                    <i class="fas fa-graduation-cap"></i>
+                    Em constante aprendizado
+                </p>
 
-        <!-- IDENTIDADE -->
-        <div class="footer-brand">
+                <p>
+                    <i class="fas fa-lightbulb"></i>
+                    Interesse em desenvolvimento Full Stack
+                </p>
 
-            <a class="footer-logo" href="#home">
-                Karen Kaminsky
-            </a>
-
-            <p class="footer-description">
-                Estagiária de Suporte de TI e desenvolvedora web em formação.
-                Sempre aprendendo, explorando tecnologias e construindo
-                novas soluções.
-            </p>
-
-            <div class="footer-social">
-
-                <a
-                    href="https://github.com/Karenkaminsky"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                    title="GitHub"
-                >
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/karenkaminsky"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                    title="LinkedIn"
-                >
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a
-                    href="curriculo.pdf"
-                    download="Curriculo_Karen_Kaminsky.pdf"
-                    aria-label="Baixar currículo"
-                    title="Baixar currículo"
-                >
-                    <i class="fas fa-file-pdf"></i>
+                <a class="footer-contact-link" href="contato.html">
+                    Vamos conversar?
+                    <i class="fas fa-arrow-right"></i>
                 </a>
 
             </div>
 
         </div>
 
-        <!-- INFORMAÇÕES -->
-        <div class="footer-column footer-info">
-
-            <h3>Conecte-se</h3>
+        <div class="footer-bottom">
 
             <p>
-                <i class="fas fa-code"></i>
-                Tecnologia e desenvolvimento
+                © 2026 Karen Kaminsky. Todos os direitos reservados.
             </p>
-
-            <p>
-                <i class="fas fa-graduation-cap"></i>
-                Em constante aprendizado
-            </p>
-
-            <p>
-                <i class="fas fa-lightbulb"></i>
-                Interesse em desenvolvimento Full Stack
-            </p>
-
-            <a class="footer-contact-link" href="#contato">
-                Vamos conversar?
-                <i class="fas fa-arrow-right"></i>
-            </a>
 
         </div>
 
-    </div>
-
-    <!-- DIREITOS AUTORAIS -->
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Karen Kaminsky. Todos os direitos reservados.
-        </p>
-
-    </div>
-
-</footer>
+    </footer>
 
 </body>
 </html>

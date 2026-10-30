@@ -1,0 +1,407 @@
+# PROMPT — DESENVOLVIMENTO E EVOLUÇÃO DO PORTFÓLIO PROFISSIONAL DE KAREN KAMINSKY
+
+Quero desenvolver e aprimorar meu portfólio profissional utilizando os arquivos e códigos que já existem no projeto. O objetivo é transformar meu portfólio atual em um site profissional, moderno, interativo, organizado e responsivo, que apresente minha trajetória, experiências, formação, habilidades e projetos na área de Tecnologia da Informação.
+
+**IMPORTANTE: Não quero reconstruir o projeto do zero.** Antes de realizar qualquer alteração, analise os arquivos HTML, CSS e JavaScript existentes. Preserve a identidade visual, os elementos gráficos, as animações e as funcionalidades que já estão funcionando. Faça melhorias progressivas, mantendo a compatibilidade entre os arquivos.
+
+## 1. Identidade visual e estilo
+
+Quero manter uma identidade visual moderna, tecnológica e profissional, com as seguintes características:
+
+- Tema escuro, com predominância de tons de azul, roxo e preto.
+- Efeitos de glassmorphism, transparências e cartões com bordas discretas.
+- Gradientes e iluminação suave.
+- Tipografia moderna, preferencialmente Space Grotesk.
+- Animações suaves e transições entre elementos.
+- Layout limpo, organizado e com boa distribuição dos espaços.
+- Responsividade para computadores, tablets e celulares.
+
+O fundo animado com partículas já existe no projeto e deve ser preservado. Os arquivos `particles.css` e `particles.js` devem continuar funcionando em todas as páginas.
+
+Não adicionar botão para alternar entre tema claro e escuro. O portfólio deverá permanecer com o tema escuro.
+
+## 2. Logo e cabeçalho
+
+Quero manter a logo que já foi desenvolvida, correspondente ao sexto modelo escolhido anteriormente.
+
+O cabeçalho deverá apresentar:
+
+- Logo com símbolo personalizado.
+- Nome KAREN KAMINSKY ao lado da logo.
+- Animação de entrada do nome, deslizando da esquerda para a direita.
+- Divisor visual entre o símbolo e o nome.
+- Menu de navegação moderno e responsivo.
+- Indicação visual da página atualmente selecionada.
+
+O menu deverá funcionar corretamente tanto em computadores quanto em dispositivos móveis.
+
+## 3. Estrutura do site — páginas independentes
+
+O portfólio deverá ser dividido em páginas HTML independentes, compartilhando os mesmos arquivos CSS e JavaScript sempre que possível.
+
+Estrutura planejada:
+
+1. `index.html` — Início
+2. `sobre.html` — Sobre mim
+3. `experiencia.html` — Experiência profissional
+4. `formacao.html` — Formação e cursos
+5. `projetos.html` — Projetos
+6. `hard-skills.html` — Hard Skills
+7. `soft-skills.html` — Soft Skills
+8. `contato.html` — Contato
+
+Todas as páginas deverão manter o mesmo cabeçalho, identidade visual, fundo animado e rodapé, garantindo uma experiência consistente.
+
+## 4. Página inicial — Início
+
+A página inicial deverá funcionar como uma apresentação visual do portfólio.
+
+Quero apresentar:
+
+- Meu nome: Karen Kaminsky.
+- Minha atuação como Estagiária de Suporte de TI e Desenvolvedora Web.
+- Uma breve apresentação profissional.
+- Elementos visuais relacionados à tecnologia.
+- Atalhos para conhecer minha trajetória, projetos e habilidades.
+- Botão para acessar meus projetos.
+- Botão para entrar em contato.
+
+A primeira impressão deverá transmitir profissionalismo, criatividade e interesse pela tecnologia.
+
+## 5. Página Sobre mim
+
+Esta página deverá apresentar minha trajetória e minha carta de apresentação.
+
+Quero incluir:
+
+- Minha fotografia, utilizando o arquivo de imagem já existente.
+- Uma apresentação pessoal e profissional.
+- Minha relação com a área de Tecnologia da Informação.
+- Meus interesses em suporte técnico, desenvolvimento web e soluções tecnológicas.
+- Minha busca por aprendizado e crescimento profissional.
+
+Utilizar inicialmente o seguinte texto como carta de apresentação:
+
+"Olá! Sou uma profissional em desenvolvimento na área de Tecnologia da Informação, com interesse em suporte técnico, desenvolvimento web e soluções tecnológicas.
+
+Ao longo da minha trajetória, tive a oportunidade de conhecer diferentes ambientes profissionais, desenvolver habilidades técnicas e aprimorar minha capacidade de resolver problemas.
+
+Tenho buscado constantemente ampliar meus conhecimentos por meio de estudos, cursos, projetos pessoais e atividades práticas.
+
+Acredito que cada experiência representa uma oportunidade de aprendizado e crescimento. Meu objetivo é continuar evoluindo profissionalmente, adquirir novas experiências e contribuir com soluções que unam tecnologia, criatividade e eficiência.
+
+Acredito que aprender continuamente é uma das principais ferramentas para construir uma carreira sólida na tecnologia.
+
+Obrigada pela visita!"
+
+O texto poderá ser apresentado em um cartão visualmente agradável, com boa legibilidade e espaçamento.
+
+## 6. Página Experiência profissional
+
+Quero apresentar minhas experiências profissionais em formato de linha do tempo (timeline).
+
+As empresas que deverão aparecer são:
+
+- Mercado Livre — experiência anterior.
+- DHL — experiência anterior.
+- Anidrol — empresa em que trabalho atualmente.
+
+A Anidrol deve ser identificada claramente como minha experiência profissional atual.
+
+Cada experiência deverá possuir um cartão contendo:
+
+- Logo da empresa.
+- Nome da empresa.
+- Período de atuação.
+- Cargo ocupado.
+- Breve descrição da empresa ou do setor.
+- Principais atividades e responsabilidades.
+- Tecnologias, ferramentas e sistemas utilizados.
+- Conhecimentos e aprendizados adquiridos.
+
+A linha do tempo deverá apresentar uma organização visual clara, com uma conexão entre as experiências.
+
+Não inventar cargos, datas ou atividades profissionais. Quando as informações não estiverem disponíveis, utilizar campos provisórios facilmente editáveis.
+
+## 7. Página Formação e cursos
+
+Quero uma página exclusiva para apresentar minha formação acadêmica, cursos e qualificações.
+
+A apresentação deverá seguir um modelo de timeline ou cartões organizados cronologicamente.
+
+Cada formação deverá conter:
+
+- Nome da instituição em destaque.
+- Nome do curso.
+- Período ou ano.
+- Descrição resumida.
+- Situação do curso, quando aplicável.
+
+Quero que o nome da instituição tenha maior destaque visual, seguido pelo nome do curso.
+
+Também quero disponibilizar certificados, mas eles não deverão ficar expostos diretamente na página.
+
+A ideia é utilizar um botão ou elemento expansível com o texto "Visualizar certificado". Quando clicado, o usuário poderá visualizar o certificado correspondente.
+
+Enquanto os certificados reais não forem adicionados, utilizar apenas informações fictícias de demonstração, identificadas como conteúdo provisório. Não criar certificados falsos.
+
+Manter, por enquanto, os exemplos fictícios que já foram discutidos, incluindo SENAC — Manutenção de Microcomputadores — 2022. Esses dados deverão ser facilmente substituídos posteriormente.
+
+## 8. Página Projetos
+
+Esta será uma das páginas mais importantes do portfólio.
+
+Quero apresentar meus projetos e repositórios do GitHub, incluindo:
+
+- Projetos completos.
+- Projetos em desenvolvimento.
+- Projetos de aprendizado.
+- Exercícios de lógica de programação.
+- Atividades práticas.
+- Projetos acadêmicos.
+- Trabalhos desenvolvidos durante meus estudos.
+
+Meu GitHub:
+https://github.com/Karenkaminsky
+
+### Organização dos projetos
+
+Não quero que todos os projetos apareçam abertos e ocupando muito espaço.
+
+A ideia é apresentar cartões inicialmente compactos, contendo:
+
+- Nome do projeto.
+- Imagem ou prévia visual.
+- Pequena descrição.
+- Categoria ou tecnologia principal.
+- Status do projeto.
+
+Ao clicar em um cartão, ele deverá expandir ou abrir uma área de detalhes, apresentando:
+
+- Descrição completa.
+- Objetivo do projeto.
+- Tecnologias utilizadas.
+- Principais funcionalidades.
+- Conhecimentos adquiridos.
+- Status de desenvolvimento.
+- Link para o repositório no GitHub.
+- Link para demonstração, quando existir.
+
+Também poderá existir um sistema de filtros por categoria ou tecnologia, facilitando a navegação.
+
+Projetos mais importantes poderão receber cartões em destaque, enquanto exercícios e atividades menores poderão ficar organizados em uma área secundária.
+
+O objetivo é disponibilizar todos os projetos sem deixar a página visualmente carregada.
+
+### Projeto FreelaDuo
+
+O FreelaDuo é meu projeto de Trabalho de Conclusão de Curso (TCC).
+
+Repositório:
+https://github.com/Karenkaminsky/FreelaDuo
+
+É uma plataforma que busca conectar profissionais de tecnologia, pessoas iniciantes na área e pequenas empresas.
+
+Estou desenvolvendo uma aplicação Android relacionada ao projeto.
+
+Quero que o FreelaDuo tenha um destaque especial na página de projetos.
+
+Uma ideia importante é criar uma representação de smartphone, como um mockup de celular, apresentando a aplicação Android em funcionamento.
+
+Dentro do mockup, quero poder inserir posteriormente uma gravação de tela ou imagens reais da aplicação.
+
+O smartphone deverá possuir aparência realista, com moldura, tela e proporções adequadas, como se o usuário estivesse visualizando o aplicativo em um aparelho.
+
+Como o portfólio será hospedado como site estático, não é necessário executar o aplicativo Android dentro do navegador. A demonstração poderá ser feita por vídeo ou capturas de tela reais.
+
+## 9. Página Hard Skills
+
+Quero apresentar minhas habilidades técnicas de forma visual e organizada.
+
+As habilidades deverão ser separadas por categorias, por exemplo:
+
+- Linguagens de programação.
+- Desenvolvimento Web.
+- Banco de dados.
+- Sistemas operacionais.
+- Suporte técnico.
+- Ferramentas e plataformas.
+- Controle de versão.
+- Infraestrutura e tecnologia.
+
+A apresentação poderá utilizar cartões, ícones, indicadores visuais ou barras de conhecimento, desde que o resultado permaneça profissional e não exagerado.
+
+As tecnologias e ferramentas deverão ser facilmente editáveis para que eu possa adicionar novas habilidades conforme evoluir profissionalmente.
+
+Não inventar conhecimentos ou níveis de domínio.
+
+## 10. Página Soft Skills
+
+Quero uma página dedicada às minhas competências comportamentais.
+
+As competências poderão ser apresentadas em cartões com ícones e pequenas descrições.
+
+A organização deverá transmitir profissionalismo, sem utilizar textos muito extensos.
+
+As competências deverão ser editáveis para que eu possa adicionar, remover ou atualizar informações futuramente.
+
+## 11. Página Contato
+
+Quero uma página simples, moderna e funcional para facilitar o contato profissional.
+
+Incluir:
+
+- E-mail profissional.
+- LinkedIn.
+- GitHub.
+- Outros canais de contato que forem adicionados posteriormente.
+
+LinkedIn:
+https://www.linkedin.com/in/karenkaminsky
+
+GitHub:
+https://github.com/Karenkaminsky
+
+Os links deverão ser clicáveis e direcionar corretamente para suas respectivas plataformas.
+
+Também poderá existir um formulário de contato, desde que seja implementado de forma funcional. Não criar formulários que apenas aparentem enviar mensagens sem possuir integração real.
+
+## 12. Currículo
+
+Já existe um arquivo `curriculo.pdf` no projeto.
+
+Quero manter a possibilidade de acessar e baixar meu currículo diretamente pelo portfólio.
+
+O botão deverá apresentar um texto como "Baixar currículo" e funcionar corretamente.
+
+## 13. Animações e interatividade
+
+Quero que o site tenha interações modernas, mas sem exageros.
+
+Sugestões:
+
+- Animação de entrada dos elementos durante a rolagem.
+- Transições suaves entre estados.
+- Efeitos de hover nos cartões.
+- Animação da logo e do nome.
+- Expansão dos cartões de projetos.
+- Timeline com animação discreta.
+- Menu responsivo.
+- Botões com efeitos visuais.
+- Fundo de partículas interativo.
+
+As animações deverão respeitar a configuração de redução de movimento do dispositivo (`prefers-reduced-motion`).
+
+A prioridade é manter boa performance, acessibilidade e facilidade de navegação.
+
+## 14. Organização dos arquivos
+
+Quero manter uma estrutura organizada, evitando duplicação desnecessária de código.
+
+A estrutura poderá seguir este modelo:
+
+- Arquivos HTML separados para cada página.
+- CSS compartilhado.
+- JavaScript compartilhado.
+- Arquivos de partículas.
+- Pasta de imagens.
+- Pasta de certificados.
+- Pasta de arquivos dos projetos.
+- Currículo em PDF.
+
+Antes de mover ou renomear qualquer arquivo existente, verificar seus caminhos e dependências para evitar links quebrados.
+
+Todos os caminhos de imagens, arquivos CSS, JavaScript, vídeos e documentos deverão funcionar corretamente em hospedagem estática, como GitHub Pages.
+
+## 15. Regras importantes durante o desenvolvimento
+
+1. Trabalhar sobre os arquivos existentes.
+2. Não apagar funcionalidades que já estejam funcionando sem necessidade.
+3. Não modificar a identidade visual sem justificativa.
+4. Não adicionar botão de tema claro/escuro.
+5. Não inventar experiências profissionais, datas, cursos ou certificados reais.
+6. Utilizar conteúdo provisório claramente identificado quando faltarem informações.
+7. Manter o código organizado, comentado e de fácil manutenção.
+8. Garantir responsividade em computadores e celulares.
+9. Verificar se os links e caminhos dos arquivos estão corretos.
+10. Evitar bibliotecas externas desnecessárias.
+11. Manter o site leve e com boa performance.
+12. Testar cada etapa antes de avançar para a próxima.
+13. Quando modificar um arquivo, apresentar o código completo atualizado ou o arquivo pronto para substituição, evitando instruções incompletas.
+14. Não realizar várias mudanças grandes simultaneamente sem antes validar a etapa anterior.
+
+## 16. Forma de trabalho
+
+Quero desenvolver o projeto em etapas, com acompanhamento e validação.
+
+A ordem sugerida é:
+
+**Etapa 1 — Estrutura e navegação**
+- Analisar os arquivos atuais.
+- Preparar as páginas HTML independentes.
+- Adaptar o cabeçalho e o menu.
+- Preservar a logo animada.
+- Garantir o funcionamento do fundo de partículas.
+- Configurar o destaque da página atual no menu.
+
+**Etapa 2 — Conteúdo profissional**
+- Desenvolver a página inicial.
+- Criar a página Sobre mim.
+- Criar a timeline de experiências profissionais.
+- Criar a página de formação e cursos.
+
+**Etapa 3 — Projetos**
+- Integrar os repositórios do GitHub.
+- Criar os cartões expansíveis.
+- Implementar filtros.
+- Destacar o FreelaDuo.
+- Criar o mockup de smartphone para a demonstração Android.
+
+**Etapa 4 — Habilidades e contato**
+- Desenvolver Hard Skills.
+- Desenvolver Soft Skills.
+- Desenvolver Contato.
+- Integrar o currículo em PDF.
+
+**Etapa 5 — Revisão**
+- Testar todos os links.
+- Testar a navegação entre páginas.
+- Verificar responsividade.
+- Verificar animações.
+- Corrigir problemas de layout.
+- Verificar compatibilidade com GitHub Pages.
+
+### Objetivo final
+
+O resultado deverá ser um portfólio profissional completo, com aparência moderna e identidade visual consistente, que apresente minha evolução na área de Tecnologia da Informação.
+
+Quero que o site transmita minha personalidade profissional, demonstre meus conhecimentos técnicos, valorize minhas experiências e permita que recrutadores, empresas e outros profissionais conheçam meus projetos e minha trajetória.
+
+**Comece analisando os arquivos existentes e proponha a primeira etapa de implementação antes de realizar alterações estruturais.**
+
+estrutura das Pasta
+KarenKaminsky.github.io/
+│
+├── index.html
+├── sobre.html
+├── experiencia.html
+├── formacao.html
+├── projetos.html
+├── hard-skills.html
+├── soft-skills.html
+├── contato.html
+│
+├── css/
+│   ├── style.css
+│   └── particles.css
+│
+├── js/
+│   ├── script.js
+│   └── particles.js
+│
+├── assets/
+│   ├── img/
+│   ├── certificados/
+│   └── projetos/
+│
+└── curriculo.pdf
