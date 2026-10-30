@@ -1,3 +1,4 @@
+
 /* ========================================
    1. VARIÁVEIS DE CORES
 ======================================== */
@@ -6,6 +7,7 @@
     color-scheme: dark;
 
     --bg-base: #171b2d;
+
     --bg-gradient: linear-gradient(
         145deg,
         #282039 0%,
@@ -18,40 +20,18 @@
 
     --card-bg: rgba(25, 30, 48, 0.78);
     --card-border: rgba(255, 255, 255, 0.14);
-    --navbar-bg: rgba(18, 22, 37, 0.92);
+
+    /* Vidro do header e footer */
+    --glass-bg: rgba(18, 10, 29, 0.68);
+    --glass-border: rgba(216, 180, 254, 0.15);
 
     --accent: #c084fc;
     --accent-hover: #a855f7;
     --accent-text: #241432;
 
     --green: #4ade80;
+
     --shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
-}
-
-[data-theme="light"] {
-    color-scheme: light;
-
-    --bg-base: #f5f2fc;
-    --bg-gradient: linear-gradient(
-        145deg,
-        #eee5fa 0%,
-        #f5f2fc 55%,
-        #eaf0fc 100%
-    );
-
-    --text-color: #241d35;
-    --text-secondary: #5c536e;
-
-    --card-bg: rgba(255, 255, 255, 0.82);
-    --card-border: rgba(105, 77, 142, 0.18);
-    --navbar-bg: rgba(250, 248, 255, 0.94);
-
-    --accent: #9854d6;
-    --accent-hover: #7e3fbb;
-    --accent-text: #ffffff;
-
-    --green: #198754;
-    --shadow: 0 20px 45px rgba(52, 37, 78, 0.10);
 }
 
 
@@ -83,10 +63,6 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.7;
-
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
 }
 
 a {
@@ -112,40 +88,57 @@ summary:focus-visible {
 
 
 /* ========================================
-   3. CABEÇALHO
+   3. CABEÇALHO COM EFEITO DE VIDRO
 ======================================== */
 
 .navbar {
     position: sticky;
-    top: 0;
+    top: 8px;
     z-index: 1000;
 
-    width: 100%;
-    min-height: 76px;
+    width: calc(100% - 16px);
+    min-height: 72px;
+
+    margin: 8px auto 0;
+    padding: 13px clamp(20px, 4vw, 45px);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
 
-    padding: 14px clamp(20px, 4vw, 55px);
+    background: var(--glass-bg);
 
-    background: var(--navbar-bg);
-    border-bottom: 1px solid var(--card-border);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
 
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.20),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
 }
 
-.logo {
+.logo,
+.footer-logo {
     flex-shrink: 0;
 
     color: var(--accent);
     font-size: 1.25rem;
-    font-weight: 750;
+    font-weight: 800;
     letter-spacing: 0.3px;
 
     text-decoration: none;
+}
+
+.logo-bracket {
+    color: var(--text-secondary);
+    font-weight: 500;
 }
 
 
@@ -193,10 +186,10 @@ summary:focus-visible {
 
     padding: 9px 12px;
 
-    border: 1px solid var(--card-border);
+    border: 1px solid var(--glass-border);
     border-radius: 9px;
 
-    background: transparent;
+    background: rgba(255, 255, 255, 0.04);
     color: var(--text-color);
 
     font-size: 1.1rem;
@@ -205,71 +198,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   5. BOTÕES DO CABEÇALHO
-======================================== */
-
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    flex-shrink: 0;
-}
-
-.btn-theme,
-.btn-download {
-    min-height: 42px;
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 9px;
-
-    padding: 9px 13px;
-
-    border: 1px solid var(--accent);
-    border-radius: 10px;
-
-    font-size: 0.88rem;
-    font-weight: 700;
-
-    text-decoration: none;
-    cursor: pointer;
-
-    transition:
-        transform 0.2s ease,
-        background-color 0.2s ease,
-        color 0.2s ease;
-}
-
-.btn-theme {
-    background: transparent;
-    color: var(--text-color);
-}
-
-.btn-download {
-    background: var(--accent);
-    color: var(--accent-text);
-}
-
-.btn-theme:hover,
-.btn-download:hover {
-    transform: translateY(-2px);
-}
-
-.btn-theme:hover {
-    background: var(--accent);
-    color: var(--accent-text);
-}
-
-.btn-download:hover {
-    background: var(--accent-hover);
-    color: #ffffff;
-}
-
-
-/* ========================================
-   6. ESTRUTURA DAS SEÇÕES
+   5. ESTRUTURA DAS SEÇÕES
 ======================================== */
 
 .container-scroll {
@@ -293,7 +222,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   7. APRESENTAÇÃO INICIAL
+   6. APRESENTAÇÃO INICIAL
 ======================================== */
 
 .hero-section {
@@ -321,7 +250,7 @@ summary:focus-visible {
 }
 
 
-/* FOTO GRANDE */
+/* FOTO */
 
 .hero-photo {
     width: 100%;
@@ -350,7 +279,7 @@ summary:focus-visible {
 }
 
 
-/* TEXTO DA APRESENTAÇÃO */
+/* TEXTO */
 
 .hero-content {
     min-width: 0;
@@ -390,7 +319,7 @@ summary:focus-visible {
 }
 
 
-/* CARGO PROFISSIONAL */
+/* CARGO */
 
 .hero-content .hero-role {
     display: block;
@@ -455,7 +384,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   8. CARTÕES DAS DEMAIS SEÇÕES
+   7. CARTÕES DAS SEÇÕES
 ======================================== */
 
 .glass-card {
@@ -507,7 +436,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   9. EXPERIÊNCIA E FORMAÇÃO
+   8. EXPERIÊNCIA E FORMAÇÃO
 ======================================== */
 
 .timeline {
@@ -559,7 +488,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   10. PROJETOS EXPANSÍVEIS
+   9. PROJETOS EXPANSÍVEIS
 ======================================== */
 
 .project-list {
@@ -661,7 +590,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   11. BOTÕES PRINCIPAIS
+   10. BOTÕES PRINCIPAIS
 ======================================== */
 
 .btn-primary {
@@ -695,7 +624,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   12. HARD SKILLS E SOFT SKILLS
+   11. HARD SKILLS E SOFT SKILLS
 ======================================== */
 
 .skills-tag {
@@ -750,7 +679,7 @@ summary:focus-visible {
 
 
 /* ========================================
-   13. CONTATO
+   12. CONTATO
 ======================================== */
 
 .contact-card > p:not(.eyebrow) {
@@ -771,26 +700,204 @@ summary:focus-visible {
 
 
 /* ========================================
-   14. RODAPÉ
+   13. RODAPÉ COM EFEITO DE VIDRO
 ======================================== */
 
 .footer {
-    padding: 25px 18px;
+    position: relative;
 
-    border-top: 1px solid var(--card-border);
+    width: calc(100% - 16px);
+    margin: 30px auto 8px;
 
-    color: var(--text-secondary);
-    text-align: center;
-    font-size: 0.85rem;
+    padding: 42px clamp(22px, 5vw, 55px) 20px;
+
+    background: var(--glass-bg);
+
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.20),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
-.footer p {
-    margin: 0;
+.footer-content {
+    width: min(100%, 900px);
+    margin: 0 auto 25px;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: clamp(30px, 5vw, 70px);
+}
+
+
+/* IDENTIDADE DO RODAPÉ */
+
+.footer-brand {
+    max-width: 370px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    font-size: 1.35rem;
+}
+
+.footer-description {
+    max-width: 350px;
+    margin-bottom: 20px;
+
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.8;
+}
+
+
+/* REDES SOCIAIS DO RODAPÉ */
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-social a {
+    width: 39px;
+    height: 39px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.footer-social a:hover {
+    color: var(--accent);
+    background: rgba(192, 132, 252, 0.12);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+
+/* COLUNAS */
+
+.footer-column h3 {
+    margin-bottom: 17px;
+
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 750;
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    list-style: none;
+}
+
+.footer-column ul a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        padding 0.2s ease;
+}
+
+.footer-column ul a:hover {
+    color: var(--accent);
+    padding-left: 4px;
+}
+
+
+/* INFORMAÇÕES */
+
+.footer-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.footer-info {
+    grid-column: auto;
+}
+
+.footer-contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 8px;
+
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: gap 0.2s ease;
+}
+
+.footer-contact-link:hover {
+    gap: 14px;
+}
+
+
+/* DIREITOS AUTORAIS */
+
+.footer-bottom {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 20px;
+    border-top: 1px solid var(--glass-border);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    width: 100%;
+
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    text-align: center;
 }
 
 
 /* ========================================
-   15. TABLETS
+   14. TABLETS
 ======================================== */
 
 @media (max-width: 1100px) {
@@ -816,11 +923,19 @@ summary:focus-visible {
     .hero-content h1 {
         font-size: clamp(2.4rem, 5vw, 3.5rem);
     }
+
+    .footer-content {
+        grid-template-columns: 1.3fr 1fr;
+    }
+
+    .footer-info {
+        grid-column: auto;
+    }
 }
 
 
 /* ========================================
-   16. CELULARES
+   15. CELULARES
 ======================================== */
 
 @media (max-width: 760px) {
@@ -829,16 +944,22 @@ summary:focus-visible {
         scroll-padding-top: 20px;
     }
 
-    /* Cabeçalho */
+    /* CABEÇALHO */
 
     .navbar {
-        position: sticky;
+        top: 8px;
+
+        width: calc(100% - 12px);
+        min-height: 62px;
+
+        margin-top: 8px;
+        padding: 11px 15px;
 
         display: flex;
         flex-wrap: wrap;
-
         gap: 10px;
-        padding: 12px 16px;
+
+        border-radius: 14px;
     }
 
     .logo {
@@ -880,23 +1001,8 @@ summary:focus-visible {
         background: rgba(192, 132, 252, 0.10);
     }
 
-    .header-actions {
-        gap: 6px;
-    }
 
-    .btn-theme,
-    .btn-download {
-        min-height: 38px;
-        padding: 8px 10px;
-        font-size: 0.82rem;
-    }
-
-    .btn-download span {
-        display: none;
-    }
-
-
-    /* Apresentação */
+    /* APRESENTAÇÃO */
 
     .hero-section {
         min-height: auto;
@@ -945,7 +1051,7 @@ summary:focus-visible {
     }
 
 
-    /* Seções */
+    /* SEÇÕES */
 
     .block {
         min-height: auto;
@@ -965,7 +1071,7 @@ summary:focus-visible {
     }
 
 
-    /* Experiência */
+    /* EXPERIÊNCIA */
 
     .timeline-item {
         gap: 12px;
@@ -979,7 +1085,7 @@ summary:focus-visible {
     }
 
 
-    /* Habilidades */
+    /* HABILIDADES */
 
     .skills-tag {
         gap: 9px;
@@ -991,7 +1097,7 @@ summary:focus-visible {
     }
 
 
-    /* Projetos */
+    /* PROJETOS */
 
     .accordion-header {
         padding: 16px;
@@ -1002,7 +1108,7 @@ summary:focus-visible {
     }
 
 
-    /* Contato */
+    /* CONTATO */
 
     .contact-btns {
         flex-direction: column;
@@ -1011,27 +1117,49 @@ summary:focus-visible {
     .contact-btns .btn-primary {
         width: 100%;
     }
+
+
+    /* RODAPÉ */
+
+    .footer {
+        width: calc(100% - 12px);
+        margin: 20px auto 6px;
+        padding: 30px 22px 18px;
+
+        border-radius: 16px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        margin-bottom: 28px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-info {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 
 /* ========================================
-   17. CELULARES PEQUENOS
+   16. CELULARES PEQUENOS
 ======================================== */
 
 @media (max-width: 380px) {
 
     .logo {
         font-size: 0.95rem;
-    }
-
-    .header-actions {
-        gap: 4px;
-    }
-
-    .btn-theme,
-    .btn-download,
-    .menu-toggle {
-        padding: 8px 9px;
     }
 
     .hero-photo {
@@ -1045,11 +1173,19 @@ summary:focus-visible {
     .glass-card {
         padding: 25px 16px;
     }
+
+    .footer {
+        padding: 25px 17px 16px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.76rem;
+    }
 }
 
 
 /* ========================================
-   18. ACESSIBILIDADE
+   17. ACESSIBILIDADE
 ======================================== */
 
 @media (prefers-reduced-motion: reduce) {
