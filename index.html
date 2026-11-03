@@ -6,26 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Portfólio profissional de Karen Kaminsky.">
+    <meta
+        name="description"
+        content="Portfólio de Karen Kaminsky, estagiária de Suporte de TI e desenvolvedora Full Stack em formação.">
+
     <meta name="theme-color" content="#171b2d">
 
     <title>Início | Karen Kaminsky</title>
 
-    <!-- Fontes -->
+    <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <!-- Ícones -->
-    <link rel="stylesheet"
+    <!-- ÍCONES -->
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/particles.css">
 
-    <!-- JavaScript -->
+    <!-- JAVASCRIPT -->
     <script src="js/script.js" defer></script>
     <script src="js/particles.js" defer></script>
 </head>
@@ -40,17 +46,28 @@
     <!-- CABEÇALHO -->
     <header class="navbar">
 
-        <a class="logo" href="index.html" aria-label="Karen Kaminsky - início">
+        <!-- LOGO -->
+        <a
+            class="logo"
+            href="index.html"
+            aria-label="Karen Kaminsky - página inicial">
 
             <span class="logo-mark" aria-hidden="true">
-                <!-- Símbolo da logo -->
+
                 <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 
                     <defs>
-                        <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+                        <linearGradient
+                            id="logoGradient"
+                            x1="0"
+                            y1="0"
+                            x2="1"
+                            y2="1">
+
                             <stop offset="0%" stop-color="#e9c5ff"/>
                             <stop offset="50%" stop-color="#c084fc"/>
                             <stop offset="100%" stop-color="#7c3aed"/>
+
                         </linearGradient>
                     </defs>
 
@@ -59,6 +76,7 @@
                         fill="url(#logoGradient)"/>
 
                 </svg>
+
             </span>
 
             <span class="logo-divider"></span>
@@ -79,17 +97,23 @@
             aria-expanded="false"
             aria-controls="main-nav">
 
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i>
 
         </button>
 
         <!-- NAVEGAÇÃO -->
-        <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <nav
+            id="main-nav"
+            class="main-nav"
+            aria-label="Navegação principal">
 
             <ul>
 
                 <li>
-                    <a href="index.html" class="active" aria-current="page">
+                    <a
+                        href="index.html"
+                        class="active"
+                        aria-current="page">
                         Início
                     </a>
                 </li>
@@ -145,16 +169,19 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="container-scroll">
 
-        <section class="block hero-section" id="home">
+        <section
+            class="block hero-section"
+            id="home"
+            aria-labelledby="hero-title">
 
             <div class="hero-profile">
 
-                <!-- FOTO -->
+                <!-- FOTO DE PERFIL -->
                 <div class="hero-photo">
 
                     <img
-                        src="assets/img/minha-foto.jpg"
-                        alt="Foto de capa"
+                        src="assets/img/minha-foto.jpeg"
+                        alt="Foto de Karen Kaminsky"
                         fetchpriority="high">
 
                 </div>
@@ -162,7 +189,9 @@
                 <!-- APRESENTAÇÃO -->
                 <div class="hero-content">
 
-                    <h1>Karen Kaminsky</h1>
+                    <h1 id="hero-title">
+                        Karen Kaminsky
+                    </h1>
 
                     <h2 class="hero-role">
                         Estagiária de Suporte de TI
@@ -171,29 +200,37 @@
                     </h2>
 
                     <p class="hero-description">
-                        Sou movida pela curiosidade, pela inovação e pelo 
-                        desafio de transformar ideias em soluções por meio 
-                        da tecnologia.<br><br>
 
-                        Tenho como objetivo me tornar desenvolvedora Full 
-                        Stack, colocando meus conhecimentos em prática no 
-                        desenvolvimento de aplicações, construção de interfaces, 
-                        programação back-end e integração com bancos de dados.<br><br>
+                        Sou movida pela curiosidade, pela inovação e pelo
+                        desafio de transformar ideias em soluções por meio
+                        da tecnologia.
 
-                        Estou sempre em busca de novos aprendizados e desafios 
-                        para evoluir e construir soluções cada vez melhores.
+                        <br><br>
+
+                        Tenho como objetivo me tornar desenvolvedora Full
+                        Stack, colocando meus conhecimentos em prática no
+                        desenvolvimento de aplicações, na construção de
+                        interfaces, na programação back-end e na integração
+                        com bancos de dados.
+
+                        <br><br>
+
+                        Busco constantemente novos aprendizados e desafios
+                        que contribuam para minha evolução na área de
+                        Tecnologia da Informação.
+
                     </p>
 
-                    <!-- REDES SOCIAIS -->
+                    <!-- REDES SOCIAIS E CURRÍCULO -->
                     <div class="hero-social">
 
                         <a
                             href="https://github.com/Karenkaminsky"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Meu GitHub">
+                            aria-label="Acessar meu GitHub">
 
-                            <i class="fab fa-github"></i>
+                            <i class="fab fa-github" aria-hidden="true"></i>
 
                         </a>
 
@@ -201,18 +238,18 @@
                             href="https://www.linkedin.com/in/karenkaminsky"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Meu LinkedIn">
+                            aria-label="Acessar meu LinkedIn">
 
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
 
                         </a>
 
                         <a
                             href="curriculo.pdf"
                             download="Curriculo_Karen_Kaminsky.pdf"
-                            aria-label="Baixar meu currículo">
+                            aria-label="Baixar meu currículo em PDF">
 
-                            <i class="fas fa-file-pdf"></i>
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i>
 
                         </a>
 
@@ -231,6 +268,7 @@
 
         <div class="footer-content">
 
+            <!-- IDENTIDADE E REDES SOCIAIS -->
             <div class="footer-brand">
 
                 <a class="footer-logo" href="index.html">
@@ -238,9 +276,9 @@
                 </a>
 
                 <p class="footer-description">
-                    Estagiária de Suporte de TI e desenvolvedora web em formação.
-                    Sempre aprendendo, explorando tecnologias e construindo
-                    novas soluções.
+                    Estagiária de Suporte de TI e desenvolvedora Full Stack
+                    em formação. Sempre aprendendo, explorando tecnologias
+                    e desenvolvendo novas soluções.
                 </p>
 
                 <div class="footer-social">
@@ -251,7 +289,7 @@
                         rel="noopener noreferrer"
                         aria-label="GitHub">
 
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github" aria-hidden="true"></i>
 
                     </a>
 
@@ -261,7 +299,7 @@
                         rel="noopener noreferrer"
                         aria-label="LinkedIn">
 
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
 
                     </a>
 
@@ -270,7 +308,7 @@
                         download="Curriculo_Karen_Kaminsky.pdf"
                         aria-label="Baixar currículo">
 
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="fas fa-file-pdf" aria-hidden="true"></i>
 
                     </a>
 
@@ -278,34 +316,36 @@
 
             </div>
 
+            <!-- INFORMAÇÕES -->
             <div class="footer-column footer-info">
 
                 <h3>Conecte-se</h3>
 
                 <p>
-                    <i class="fas fa-code"></i>
+                    <i class="fas fa-code" aria-hidden="true"></i>
                     Tecnologia e desenvolvimento
                 </p>
 
                 <p>
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                     Em constante aprendizado
                 </p>
 
                 <p>
-                    <i class="fas fa-lightbulb"></i>
+                    <i class="fas fa-lightbulb" aria-hidden="true"></i>
                     Interesse em desenvolvimento Full Stack
                 </p>
 
                 <a class="footer-contact-link" href="contato.html">
                     Vamos conversar?
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </a>
 
             </div>
 
         </div>
 
+        <!-- DIREITOS AUTORAIS -->
         <div class="footer-bottom">
 
             <p>
