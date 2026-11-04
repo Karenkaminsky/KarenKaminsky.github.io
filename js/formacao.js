@@ -1,8 +1,4 @@
 
-/* =========================================================
-   FORMAÇÃO - ANIMAÇÕES DOS ELEMENTOS
-========================================================= */
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const animatedElements = document.querySelectorAll(
