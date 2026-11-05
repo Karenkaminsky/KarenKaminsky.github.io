@@ -6,54 +6,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Conheça os projetos desenvolvidos por Karen Kaminsky, incluindo aplicações, jogos e experiências de desenvolvimento web.">
+    <meta name="description" content="Conheça os projetos desenvolvidos por Karen Kaminsky, incluindo aplicações web, jogos e projetos de programação.">
+
+    <meta name="theme-color" content="#0b0614">
 
     <title>Projetos | Karen Kaminsky</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- CSS principal -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- CSS das partículas -->
     <link rel="stylesheet" href="css/particles.css">
-
-    <!-- CSS da página -->
     <link rel="stylesheet" href="css/projetos.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js" defer></script>
+    <script src="js/particles.js" defer></script>
 </head>
 
 <body>
 
     <!-- FUNDO ANIMADO -->
-    <div id="particles-background">
+    <div id="particles-background" aria-hidden="true">
         <canvas id="particles-canvas"></canvas>
     </div>
 
     <!-- CABEÇALHO -->
     <header class="navbar">
 
-        <a href="index.html" class="logo">
-            KK<span>.</span>
+        <!-- LOGO -->
+        <a class="logo" href="index.html" aria-label="Karen Kaminsky - início">
+
+            <span class="logo-mark" aria-hidden="true">
+
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#e9c5ff"/>
+                            <stop offset="50%" stop-color="#c084fc"/>
+                            <stop offset="100%" stop-color="#7c3aed"/>
+                        </linearGradient>
+                    </defs>
+
+                    <path
+                        d="M10 7 H20 V27 L41 7 H55 L32 30 L56 57 H42 L25 38 L20 43 V57 H10 Z"
+                        fill="url(#logoGradient)"/>
+
+                </svg>
+
+            </span>
+
+            <span class="logo-divider"></span>
+
+            <span class="logo-name">
+                <span>KAREN</span>
+                <span>KAMINSKY</span>
+            </span>
+
         </a>
 
-        <button class="menu-toggle" id="menu-toggle"
-            aria-label="Abrir menu de navegação">
+        <!-- MENU MOBILE -->
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="main-nav">
+
             <i class="fas fa-bars"></i>
+
         </button>
 
-        <nav class="main-nav" id="main-nav">
+        <!-- NAVEGAÇÃO -->
+        <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
 
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="experiencia.html">Experiência</a>
-            <a href="formacao.html">Formação</a>
-            <a href="projetos.html" class="active" aria-current="page">Projetos</a>
-            <a href="hard-skills.html">Hard Skills</a>
-            <a href="soft-skills.html">Soft Skills</a>
-            <a href="contato.html">Contato</a>
+            <ul>
+
+                <li><a href="index.html">Início</a></li>
+
+                <li><a href="sobre.html">Sobre mim</a></li>
+
+                <li><a href="experiencia.html">Experiência</a></li>
+
+                <li><a href="formacao.html">Formação</a></li>
+
+                <li>
+                    <a href="projetos.html" class="active" aria-current="page">
+                        Projetos
+                    </a>
+                </li>
+
+                <li><a href="hard-skills.html">Hard Skills</a></li>
+
+                <li><a href="soft-skills.html">Soft Skills</a></li>
+
+                <li><a href="contato.html">Contato</a></li>
+
+            </ul>
 
         </nav>
 
@@ -62,9 +124,9 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
-        <!-- APRESENTAÇÃO -->
         <section class="projects-section">
 
+            <!-- APRESENTAÇÃO -->
             <div class="projects-heading">
 
                 <span class="section-subtitle">
@@ -86,22 +148,23 @@
             <!-- GRADE DE PROJETOS -->
             <div class="projects-grid">
 
-                <!-- PROJETO 01 - JOGO -->
+                <!-- PROJETO 01 - MARIO JUMP -->
                 <article class="project-card">
 
                     <div class="project-media game-media">
 
-                        <!-- Substituir pela capa real do jogo -->
                         <img
                             src="assets/img/projetos/mario-jump-capa.png"
                             alt="Capa do jogo Mario Jump"
                             class="project-cover">
 
                         <div class="media-overlay">
+
                             <span class="project-category">
                                 <i class="fas fa-gamepad"></i>
                                 Jogo
                             </span>
+
                         </div>
 
                     </div>
@@ -109,11 +172,11 @@
                     <div class="project-content">
 
                         <div class="project-header">
+
                             <h2>Mario Jump</h2>
 
-                            <span class="project-number">
-                                01
-                            </span>
+                            <span class="project-number">01</span>
+
                         </div>
 
                         <p class="project-description">
@@ -123,11 +186,9 @@
                         </p>
 
                         <div class="project-technologies">
-
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-
                         </div>
 
                         <div class="project-footer">
@@ -137,10 +198,15 @@
                                 Jogar agora
                             </a>
 
-                            <a href="#" class="github-link"
-                                target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="#"
+                                class="github-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
                                 <i class="fab fa-github"></i>
                                 Código-fonte
+
                             </a>
 
                         </div>
@@ -148,7 +214,6 @@
                     </div>
 
                 </article>
-
 
                 <!-- PROJETO 02 - APLICATIVO -->
                 <article class="project-card">
@@ -160,12 +225,6 @@
                             <div class="phone-speaker"></div>
 
                             <div class="phone-screen">
-
-                                <!--
-                                    Substituir pelo vídeo real do aplicativo.
-                                    Arquivo esperado:
-                                    assets/videos/aplicativo-demo.mp4
-                                -->
 
                                 <video
                                     class="app-demo-video"
@@ -188,10 +247,12 @@
                         </div>
 
                         <div class="media-overlay">
+
                             <span class="project-category">
                                 <i class="fas fa-mobile-alt"></i>
                                 Aplicativo
                             </span>
+
                         </div>
 
                     </div>
@@ -199,11 +260,11 @@
                     <div class="project-content">
 
                         <div class="project-header">
+
                             <h2>Meu Aplicativo</h2>
 
-                            <span class="project-number">
-                                02
-                            </span>
+                            <span class="project-number">02</span>
+
                         </div>
 
                         <p class="project-description">
@@ -213,9 +274,7 @@
                         </p>
 
                         <div class="project-technologies">
-
                             <span>Em desenvolvimento</span>
-
                         </div>
 
                         <div class="project-footer">
@@ -225,10 +284,273 @@
                                 Ver demonstração
                             </a>
 
-                            <a href="#" class="github-link"
-                                target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="#"
+                                class="github-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
                                 <i class="fab fa-github"></i>
                                 Código-fonte
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJETO 03 - JOGO DE XADREZ -->
+                <article class="project-card">
+
+                    <div class="project-media">
+
+                        <img
+                            src="assets/img/projetos/xadrez-capa.png"
+                            alt="Capa do projeto de jogo de xadrez"
+                            class="project-cover">
+
+                        <div class="media-overlay">
+
+                            <span class="project-category">
+                                <i class="fas fa-chess"></i>
+                                Jogo
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+
+                            <h2>Jogo de Xadrez</h2>
+
+                            <span class="project-number">03</span>
+
+                        </div>
+
+                        <p class="project-description">
+                            Desenvolvimento de um jogo de xadrez utilizando Java,
+                            explorando conceitos de lógica de programação,
+                            orientação a objetos e organização de código.
+                            O projeto foi uma oportunidade de colocar em prática
+                            conhecimentos de programação.
+                        </p>
+
+                        <div class="project-technologies">
+                            <span>Java</span>
+                            <span>POO</span>
+                            <span>Lógica de Programação</span>
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="#" class="project-link">
+                                <i class="fas fa-chess-knight"></i>
+                                Conhecer projeto
+                            </a>
+
+                            <a
+                                href="#"
+                                class="github-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                Código-fonte
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJETO 04 - SISTEMA DE GERENCIAMENTO -->
+                <article class="project-card">
+
+                    <div class="project-media">
+
+                        <img
+                            src="assets/img/projetos/sistema-gestao.png"
+                            alt="Imagem ilustrativa de um sistema de gerenciamento"
+                            class="project-cover">
+
+                        <div class="media-overlay">
+
+                            <span class="project-category">
+                                <i class="fas fa-laptop-code"></i>
+                                Sistema web
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+
+                            <h2>Sistema de Gerenciamento</h2>
+
+                            <span class="project-number">04</span>
+
+                        </div>
+
+                        <p class="project-description">
+                            Projeto demonstrativo de um sistema para organização
+                            e gerenciamento de informações, com foco em praticar
+                            a criação de interfaces e funcionalidades para aplicações web.
+                        </p>
+
+                        <div class="project-technologies">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i>
+                                Ver projeto
+                            </a>
+
+                            <a href="#" class="github-link">
+                                <i class="fab fa-github"></i>
+                                Código-fonte
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJETO 05 - DASHBOARD -->
+                <article class="project-card">
+
+                    <div class="project-media">
+
+                        <img
+                            src="assets/img/projetos/dashboard.png"
+                            alt="Imagem ilustrativa de um painel de análise de dados"
+                            class="project-cover">
+
+                        <div class="media-overlay">
+
+                            <span class="project-category">
+                                <i class="fas fa-chart-line"></i>
+                                Análise de dados
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+
+                            <h2>Dashboard de Dados</h2>
+
+                            <span class="project-number">05</span>
+
+                        </div>
+
+                        <p class="project-description">
+                            Projeto demonstrativo de um painel interativo para
+                            visualização de informações, gráficos e indicadores,
+                            com o objetivo de facilitar a interpretação de dados.
+                        </p>
+
+                        <div class="project-technologies">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="#" class="project-link">
+                                <i class="fas fa-chart-bar"></i>
+                                Ver projeto
+                            </a>
+
+                            <a href="#" class="github-link">
+                                <i class="fab fa-github"></i>
+                                Código-fonte
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJETO 06 - PORTFÓLIO PESSOAL -->
+                <article class="project-card">
+
+                    <div class="project-media">
+
+                        <img
+                            src="assets/img/projetos/portfolio.png"
+                            alt="Imagem ilustrativa de um portfólio pessoal"
+                            class="project-cover">
+
+                        <div class="media-overlay">
+
+                            <span class="project-category">
+                                <i class="fas fa-code"></i>
+                                Desenvolvimento web
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+
+                            <h2>Portfólio Pessoal</h2>
+
+                            <span class="project-number">06</span>
+
+                        </div>
+
+                        <p class="project-description">
+                            Desenvolvimento de um site pessoal para apresentar
+                            experiências, conhecimentos, habilidades e projetos,
+                            utilizando recursos de estilização e interatividade.
+                        </p>
+
+                        <div class="project-technologies">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="#" class="project-link">
+                                <i class="fas fa-globe"></i>
+                                Ver projeto
+                            </a>
+
+                            <a
+                                href="https://github.com/Karenkaminsky"
+                                class="github-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                Código-fonte
+
                             </a>
 
                         </div>
@@ -249,6 +571,7 @@
         <div class="footer-content">
 
             <div class="footer-brand">
+
                 <a class="footer-logo" href="index.html">
                     Karen Kaminsky
                 </a>
@@ -256,6 +579,7 @@
                 <p>
                     Desenvolvendo ideias e transformando aprendizado em projetos.
                 </p>
+
             </div>
 
             <div class="footer-column">
@@ -274,14 +598,22 @@
 
                 <h3>Conecte-se</h3>
 
-                <a href="https://github.com/Karenkaminsky"
-                    target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://github.com/Karenkaminsky"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
                     GitHub
+
                 </a>
 
-                <a href="https://www.linkedin.com/in/karenkaminsky/"
-                    target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://www.linkedin.com/in/karenkaminsky/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
                     LinkedIn
+
                 </a>
 
             </div>
@@ -297,10 +629,6 @@
         </div>
 
     </footer>
-
-    <!-- JAVASCRIPT -->
-    <script src="js/script.js" defer></script>
-    <script src="js/particles.js" defer></script>
 
 </body>
 
