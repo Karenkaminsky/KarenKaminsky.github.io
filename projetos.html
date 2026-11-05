@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conheça os projetos desenvolvidos por Karen Kaminsky, incluindo aplicações, jogos e experiências de desenvolvimento web.">
+
+    <title>Projetos | Karen Kaminsky</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS das partículas -->
+    <link rel="stylesheet" href="css/particles.css">
+
+    <!-- CSS da página -->
+    <link rel="stylesheet" href="css/projetos.css">
+</head>
+
+<body>
+
+    <!-- FUNDO ANIMADO -->
+    <div id="particles-background">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            KK<span>.</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+            aria-label="Abrir menu de navegação">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="main-nav">
+
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="experiencia.html">Experiência</a>
+            <a href="formacao.html">Formação</a>
+            <a href="projetos.html" class="active" aria-current="page">Projetos</a>
+            <a href="hard-skills.html">Hard Skills</a>
+            <a href="soft-skills.html">Soft Skills</a>
+            <a href="contato.html">Contato</a>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="projects-section">
+
+            <div class="projects-heading">
+
+                <span class="section-subtitle">
+                    MEU TRABALHO
+                </span>
+
+                <h1>
+                    Meus
+                    <span>Projetos.</span>
+                </h1>
+
+                <p>
+                    Conheça alguns projetos que desenvolvi e estou desenvolvendo,
+                    explorando ideias, tecnologias e soluções por meio da programação.
+                </p>
+
+            </div>
+
+            <!-- GRADE DE PROJETOS -->
+            <div class="projects-grid">
+
+                <!-- PROJETO 01 - JOGO -->
+                <article class="project-card">
+
+                    <div class="project-media game-media">
+
+                        <!-- Substituir pela capa real do jogo -->
+                        <img
+                            src="assets/img/projetos/mario-jump-capa.png"
+                            alt="Capa do jogo Mario Jump"
+                            class="project-cover">
+
+                        <div class="media-overlay">
+                            <span class="project-category">
+                                <i class="fas fa-gamepad"></i>
+                                Jogo
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+                            <h2>Mario Jump</h2>
+
+                            <span class="project-number">
+                                01
+                            </span>
+                        </div>
+
+                        <p class="project-description">
+                            Um jogo inspirado nos clássicos de plataforma,
+                            desenvolvido com o objetivo de explorar lógica
+                            de programação, interatividade e desenvolvimento web.
+                        </p>
+
+                        <div class="project-technologies">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="#" class="project-link game-link">
+                                <i class="fas fa-gamepad"></i>
+                                Jogar agora
+                            </a>
+
+                            <a href="#" class="github-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                Código-fonte
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJETO 02 - APLICATIVO -->
+                <article class="project-card">
+
+                    <div class="project-media app-media">
+
+                        <div class="phone-mockup">
+
+                            <div class="phone-speaker"></div>
+
+                            <div class="phone-screen">
+
+                                <!--
+                                    Substituir pelo vídeo real do aplicativo.
+                                    Arquivo esperado:
+                                    assets/videos/aplicativo-demo.mp4
+                                -->
+
+                                <video
+                                    class="app-demo-video"
+                                    controls
+                                    muted
+                                    playsinline
+                                    preload="metadata"
+                                    poster="assets/img/projetos/aplicativo-capa.png">
+
+                                    <source
+                                        src="assets/videos/aplicativo-demo.mp4"
+                                        type="video/mp4">
+
+                                    Seu navegador não suporta a reprodução de vídeo.
+
+                                </video>
+
+                            </div>
+
+                        </div>
+
+                        <div class="media-overlay">
+                            <span class="project-category">
+                                <i class="fas fa-mobile-alt"></i>
+                                Aplicativo
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-header">
+                            <h2>Meu Aplicativo</h2>
+
+                            <span class="project-number">
+                                02
+                            </span>
+                        </div>
+
+                        <p class="project-description">
+                            Um aplicativo em desenvolvimento que busca transformar
+                            uma ideia em uma solução prática. Aqui será apresentada
+                            uma demonstração de suas funcionalidades.
+                        </p>
+
+                        <div class="project-technologies">
+
+                            <span>Em desenvolvimento</span>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="#" class="project-link app-link">
+                                <i class="fas fa-play"></i>
+                                Ver demonstração
+                            </a>
+
+                            <a href="#" class="github-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                Código-fonte
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <a class="footer-logo" href="index.html">
+                    Karen Kaminsky
+                </a>
+
+                <p>
+                    Desenvolvendo ideias e transformando aprendizado em projetos.
+                </p>
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Navegação</h3>
+
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="experiencia.html">Experiência</a>
+                <a href="formacao.html">Formação</a>
+                <a href="projetos.html">Projetos</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Conecte-se</h3>
+
+                <a href="https://github.com/Karenkaminsky"
+                    target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/karenkaminsky/"
+                    target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Karen Kaminsky. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js" defer></script>
+    <script src="js/particles.js" defer></script>
+
+</body>
+
+</html>

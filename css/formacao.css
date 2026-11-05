@@ -5,14 +5,19 @@
 
 .formation-section {
     display: block;
-
     position: relative;
+
     width: 100%;
+    max-width: 1200px;
     min-height: auto;
 
-    padding: 60px 0 80px;
+    margin: 0 auto;
+    padding: 60px 25px 80px;
 
+    box-sizing: border-box;
     overflow: hidden;
+
+    text-align: center;
 }
 
 
@@ -21,7 +26,9 @@
 ========================================================= */
 
 .formation-heading {
+    width: 100%;
     max-width: 850px;
+
     margin: 0 auto 100px;
 
     text-align: center;
@@ -29,10 +36,8 @@
 
 .formation-heading .eyebrow {
     color: #c084fc;
-
     font-size: 0.85rem;
     font-weight: 700;
-
     letter-spacing: 3px;
 
     margin-bottom: 25px;
@@ -43,7 +48,6 @@
 
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 700;
-
     line-height: 1.15;
 
     margin-bottom: 30px;
@@ -65,6 +69,7 @@
 }
 
 .formation-intro {
+    width: 100%;
     max-width: 700px;
 
     margin: 0 auto;
@@ -73,6 +78,8 @@
 
     font-size: 1.05rem;
     line-height: 1.9;
+
+    text-align: center;
 }
 
 
@@ -82,12 +89,18 @@
 
 .formation-section-heading {
     display: flex;
+    flex-direction: column;
 
     align-items: center;
+    justify-content: center;
 
-    gap: 20px;
+    gap: 15px;
 
-    margin-bottom: 35px;
+    width: 100%;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
 }
 
 .formation-section-icon {
@@ -107,10 +120,18 @@
     border: 1px solid rgba(192, 132, 252, 0.25);
 
     color: #c084fc;
-
     font-size: 1.5rem;
 
     box-shadow: 0 0 25px rgba(124, 58, 237, 0.10);
+}
+
+.formation-section-heading > div {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
 }
 
 .formation-section-heading .eyebrow {
@@ -129,6 +150,8 @@
 
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-weight: 700;
+
+    text-align: center;
 }
 
 .formation-section-heading h2 span {
@@ -136,21 +159,46 @@
 }
 
 .formation-section-description {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
     color: #aeb5c7;
 
     font-size: 1rem;
     line-height: 1.8;
 
-    margin-bottom: 40px;
+    text-align: center;
 }
 
 
 /* =========================================================
-   4. FORMAÇÃO ACADÊMICA
+   4. SEÇÕES DE FORMAÇÃO
 ========================================================= */
+
+.academic-section,
+.complementary-courses,
+.certifications-section {
+    width: 100%;
+    max-width: 1100px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
 
 .academic-section {
     margin-bottom: 100px;
+}
+
+.complementary-courses {
+    margin-bottom: 100px;
+}
+
+.certifications-section {
+    margin-bottom: 80px;
 }
 
 
@@ -169,7 +217,6 @@
 
     width: 100%;
     max-width: 440px;
-
     min-height: 280px;
 
     padding: 35px;
@@ -245,7 +292,6 @@
     border: 1px solid rgba(192, 132, 252, 0.2);
 
     color: #c084fc;
-
     font-size: 1.8rem;
 }
 
@@ -257,9 +303,29 @@
     flex-direction: column;
 
     align-items: center;
+    justify-content: center;
 
     width: 100%;
     min-width: 0;
+
+    text-align: center;
+}
+
+.academic-heading h3 {
+    color: #f8fafc;
+
+    font-size: 1.35rem;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+    text-align: center;
+}
+
+.academic-institution {
+    color: #aeb5c7;
+
+    font-size: 0.95rem;
 
     text-align: center;
 }
@@ -269,6 +335,7 @@
 
 .academic-status {
     display: inline-block;
+    align-self: center;
 
     color: #c084fc;
 
@@ -279,21 +346,7 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
-}
 
-.academic-heading h3 {
-    color: #f8fafc;
-
-    font-size: 1.35rem;
-    font-weight: 700;
-
-    margin-bottom: 8px;
-}
-
-.academic-institution {
-    color: #aeb5c7;
-
-    font-size: 0.95rem;
     text-align: center;
 }
 
@@ -302,7 +355,6 @@
 
 .academic-period {
     display: inline-block;
-
     align-self: center;
 
     color: #c084fc;
@@ -315,7 +367,6 @@
     background: rgba(192, 132, 252, 0.08);
 
     border: 1px solid rgba(192, 132, 252, 0.15);
-
     border-radius: 10px;
 
     text-align: center;
@@ -331,6 +382,7 @@
     flex-direction: column;
 
     align-items: center;
+    justify-content: center;
 
     width: 100%;
 
@@ -387,7 +439,6 @@
     background: rgba(124, 58, 237, 0.08);
 
     border: 1px solid rgba(192, 132, 252, 0.15);
-
     border-radius: 10px;
 
     transition: 0.3s ease;
@@ -407,92 +458,23 @@
 
 
 /* =========================================================
-   8. CURSOS COMPLEMENTARES
+   8. LINHA DO TEMPO ACADÊMICA
 ========================================================= */
-
-.complementary-courses {
-    margin-bottom: 100px;
-}
-
-.courses-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 25px;
-}
-
-
-/* =========================================================
-   9. CERTIFICAÇÕES
-========================================================= */
-
-.certifications-section {
-    margin-bottom: 80px;
-}
-
-.certifications-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 25px;
-}
-
-
-/* =========================================================
-   10. MENSAGEM FINAL
-========================================================= */
-
-.formation-footer-message {
-    display: flex;
-
-    align-items: center;
-
-    gap: 20px;
-
-    padding: 30px;
-
-    background: rgba(124, 58, 237, 0.08);
-
-    border: 1px solid rgba(192, 132, 252, 0.18);
-
-    border-radius: 20px;
-
-    margin-top: 50px;
-}
-
-.formation-footer-message i {
-    color: #c084fc;
-
-    font-size: 1.8rem;
-
-    flex-shrink: 0;
-}
-
-.formation-footer-message p {
-    color: #d1c4e9;
-
-    font-size: 0.95rem;
-    line-height: 1.8;
-}
-
-
-/* =========================================================
-   11. LINHA DO TEMPO ALTERNADA
-========================================================= */
-
-/* CONTAINER PRINCIPAL */
 
 .academic-timeline {
     position: relative;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 
     width: 100%;
     max-width: 1050px;
 
     margin: 60px auto;
 
-    padding: 20px 0;
+    padding: 25px 0;
+
+    row-gap: 40px;
 
     box-sizing: border-box;
 }
@@ -507,7 +489,6 @@
 
     top: 0;
     bottom: 0;
-
     left: 50%;
 
     width: 2px;
@@ -515,10 +496,10 @@
     transform: translateX(-50%);
 
     background: linear-gradient(
-        180deg,
+        to bottom,
         transparent,
         #c084fc,
-        rgba(124, 58, 237, 0.2),
+        rgba(124, 58, 237, 0.25),
         #c084fc,
         transparent
     );
@@ -526,7 +507,7 @@
 
 
 /* =========================================================
-   ITENS DA LINHA DO TEMPO
+   9. ITENS DA LINHA DO TEMPO
 ========================================================= */
 
 .academic-item {
@@ -535,9 +516,12 @@
     display: flex;
     align-items: center;
 
-    width: 50%;
+    width: 100%;
+    min-width: 0;
 
-    margin: 0 0 40px 0;
+    margin: 0;
+
+    padding: 0 35px;
 
     box-sizing: border-box;
 }
@@ -546,39 +530,40 @@
 /* CARDS DO LADO ESQUERDO */
 
 .academic-item:nth-child(odd) {
-    justify-content: flex-end;
+    grid-column: 1;
 
-    padding-right: 40px;
+    justify-content: flex-end;
 }
 
 
 /* CARDS DO LADO DIREITO */
 
 .academic-item:nth-child(even) {
-    margin-left: 50%;
+    grid-column: 2;
 
     justify-content: flex-start;
-
-    padding-left: 40px;
 }
 
 
 /* =========================================================
-   MARCADORES DA LINHA DO TEMPO
+   10. MARCADORES DA LINHA DO TEMPO
 ========================================================= */
 
 .academic-marker {
     position: absolute;
 
-    top: 35px;
+    top: 50%;
+    right: -11px;
 
-    width: 22px;
-    height: 22px;
+    z-index: 3;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
+
+    width: 22px;
+    height: 22px;
 
     border: 2px solid #c084fc;
     border-radius: 50%;
@@ -587,23 +572,17 @@
 
     box-shadow: 0 0 15px rgba(192, 132, 252, 0.5);
 
-    z-index: 3;
+    transform: translateY(-50%);
 
     box-sizing: border-box;
 }
 
 
-/* MARCADOR DOS CARDS À ESQUERDA */
-
-.academic-item:nth-child(odd) .academic-marker {
-    right: -11px;
-}
-
-
-/* MARCADOR DOS CARDS À DIREITA */
+/* MARCADORES DO LADO DIREITO */
 
 .academic-item:nth-child(even) .academic-marker {
     left: -11px;
+    right: auto;
 }
 
 
@@ -622,26 +601,88 @@
 
 
 /* =========================================================
-   12. RESPONSIVIDADE — TABLETS
+   11. CURSOS E CERTIFICAÇÕES
+========================================================= */
+
+.courses-grid,
+.certifications-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    justify-items: center;
+}
+
+
+/* =========================================================
+   12. MENSAGEM FINAL
+========================================================= */
+
+.formation-footer-message {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    width: 100%;
+    max-width: 900px;
+
+    padding: 30px;
+
+    margin: 50px auto 0;
+
+    box-sizing: border-box;
+
+    background: rgba(124, 58, 237, 0.08);
+
+    border: 1px solid rgba(192, 132, 252, 0.18);
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.formation-footer-message i {
+    color: #c084fc;
+
+    font-size: 1.8rem;
+}
+
+.formation-footer-message p {
+    color: #d1c4e9;
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   13. RESPONSIVIDADE — TABLETS
 ========================================================= */
 
 @media (max-width: 768px) {
 
-    /* SEÇÃO PRINCIPAL */
-
     .formation-section {
-        padding: 40px 0 60px;
+        padding: 40px 20px 60px;
     }
 
     .formation-heading {
         margin-bottom: 70px;
     }
 
-
-    /* TÍTULOS */
-
     .formation-section-heading {
-        gap: 15px;
+        gap: 12px;
     }
 
     .formation-section-icon {
@@ -652,18 +693,19 @@
     }
 
 
-    /* LINHA DO TEMPO */
+    /* LINHA DO TEMPO EM UMA COLUNA */
 
     .academic-timeline {
-        max-width: 100%;
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
 
         margin: 40px auto;
 
-        padding: 20px 0 20px 35px;
+        padding: 20px 0 20px 30px;
+
+        row-gap: 30px;
     }
-
-
-    /* LINHA LATERAL */
 
     .academic-timeline::before {
         left: 10px;
@@ -671,38 +713,31 @@
         transform: none;
     }
 
-
-    /* TODOS OS ITENS EM UMA COLUNA */
-
     .academic-item,
     .academic-item:nth-child(odd),
     .academic-item:nth-child(even) {
+        grid-column: 1;
+
         width: 100%;
 
-        margin: 0 0 35px 0;
+        margin: 0;
 
         padding: 0 0 0 20px;
 
         justify-content: flex-start;
     }
 
-
-    /* MARCADORES ALINHADOS À LINHA */
-
-    .academic-item:nth-child(odd) .academic-marker,
-    .academic-item:nth-child(even) .academic-marker {
-        left: -31px;
-        right: auto;
-    }
-
-
-    /* CARDS */
-
     .academic-card {
         width: 100%;
         max-width: 100%;
 
         min-height: auto;
+    }
+
+    .academic-marker,
+    .academic-item:nth-child(even) .academic-marker {
+        left: -20px;
+        right: auto;
     }
 
 
@@ -717,8 +752,6 @@
     /* MENSAGEM FINAL */
 
     .formation-footer-message {
-        align-items: flex-start;
-
         padding: 25px;
     }
 
@@ -726,12 +759,18 @@
 
 
 /* =========================================================
-   13. RESPONSIVIDADE — CELULARES
+   14. RESPONSIVIDADE — CELULARES
 ========================================================= */
 
 @media (max-width: 480px) {
 
-    /* APRESENTAÇÃO */
+    .formation-section {
+        padding: 35px 15px 50px;
+    }
+
+    .formation-heading {
+        margin-bottom: 55px;
+    }
 
     .formation-heading h1 {
         font-size: 2.3rem;
@@ -741,37 +780,32 @@
         font-size: 0.95rem;
     }
 
+    .formation-section-heading h2 {
+        font-size: 1.7rem;
+    }
+
 
     /* LINHA DO TEMPO */
 
     .academic-timeline {
-        padding-left: 30px;
+        padding-left: 25px;
 
-        margin: 35px auto;
+        row-gap: 25px;
     }
-
-
-    /* LINHA LATERAL */
 
     .academic-timeline::before {
         left: 8px;
     }
 
-
-    /* ITENS */
-
     .academic-item,
     .academic-item:nth-child(odd),
     .academic-item:nth-child(even) {
-        padding-left: 18px;
+        padding-left: 17px;
     }
 
-
-    /* MARCADORES */
-
-    .academic-item:nth-child(odd) .academic-marker,
+    .academic-marker,
     .academic-item:nth-child(even) .academic-marker {
-        left: -21px;
+        left: -17px;
         right: auto;
     }
 
@@ -779,15 +813,16 @@
     /* CARDS */
 
     .academic-card {
-        min-height: 260px;
+        min-height: auto;
 
-        padding: 20px;
+        padding: 20px 15px;
 
         border-radius: 18px;
     }
 
-
-    /* ÍCONES */
+    .academic-card-header {
+        margin-bottom: 22px;
+    }
 
     .academic-logo {
         width: 55px;
@@ -796,15 +831,13 @@
         font-size: 1.4rem;
     }
 
-
-    /* TÍTULOS */
-
     .academic-heading h3 {
         font-size: 1.15rem;
     }
 
-
-    /* ETIQUETAS */
+    .academic-description {
+        font-size: 0.9rem;
+    }
 
     .academic-tags {
         gap: 8px;
@@ -816,11 +849,15 @@
         padding: 8px 10px;
     }
 
+    .formation-footer-message {
+        padding: 20px;
+    }
+
 }
 
 
 /* =========================================================
-   14. ANIMAÇÕES DE ENTRADA
+   15. ANIMAÇÕES DE ENTRADA
 ========================================================= */
 
 .reveal {
@@ -841,7 +878,7 @@
 
 
 /* =========================================================
-   15. ACESSIBILIDADE
+   16. ACESSIBILIDADE
 ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
